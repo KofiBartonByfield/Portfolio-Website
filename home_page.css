@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*-------------------------------------------------------*/
+
+.FirstScreen {
+    height: 300vh;
+    background-color: #E7EFF1;
+    position: sticky;
+    top: 0;
+}
+
+.T1 {
+    text-align: left;
+    color: rgb(47, 46, 46);
+    font-size: 4cm;
+}
+
+/* Flexbox container to align headshot and skills horizontally */
+.content-container {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the start */
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Headshot section */
+.headshot-container {
+    flex: 0 0 auto;
+    margin-right: 20px;  /* Add space between the headshot and the skills */
+}
+ 
+.headshot {
+    width: 300px;  /* Adjust the width of the image */
+    height: auto;
+    border-radius: 3.5%;
+    border: 2px solid #737778;
+}
+
+.caption{
+    text-align: center;
+}
+
+/* Relevent Skills section */
+.skills-container {
+    flex: 1;  /* Allows the skills section to grow if needed */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.skills-container p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Skills boxes aligned horizontally */
+.skills-boxes {
+    display: flex;
+    gap: 10px;  /* Adds space between the skill boxes */
+}
+
+.skill-box {
+    background-color: #ccc;  /* Change to desired background color */
+    padding: 10px 20.5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;  /* Prevents text wrapping */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    gap: 10px;
+    padding: 30px 0px;
+}
+
+.grid-image {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skill-box {
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer; /* Make the skill-box look clickable */
+    transition: background-color 0.3s;
+}
+
+.skill-box:hover {
+    background-color: #aaa;
+}
+
+.skill-box.selected {
+    background-color: #666; /* Highlight the selected skill */
+    color: white;
+}
+
+.grid-image {
+    display: none; /* Hide all images by default */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-image.show {
+    display: block; /* Show images with the 'show' class */
+}
+/*-------------------------------------------------------*/
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure full height for absolute positioning */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the title and the logo container */
+    padding: 10px; /* Optional: add padding around the header */
+}
+
+.T1 {
+    margin: 0; /* Remove default margin around the heading */
+    color: rgb(47, 46, 46);
+    font-size: 4cm; /* Adjust font size as needed */
+}
+
+.LogoContainer {
+    display: flex; /* Align logos horizontally */
+    align-items: center; /* Vertically center the logos */
+    gap: 10px; /* Space between logos, adjust as needed */
+}
+
+.Logo img, .Email img {
+    display: block; /* Ensure there's no extra space around the images */
+    width: 100px; /* Set the width of the logos */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.Email img {
+    cursor: pointer; /* Indicates the email logo is clickable */
+}
