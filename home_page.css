@@ -15,6 +15,21 @@ h1 {
 a {
     text-decoration: none; /* Remove underline from all links */
 }
+
+
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+    background-color: #e1e1e1; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative;
+  }
 /*-------------------------------------------------------*/
 
 
@@ -32,9 +47,10 @@ a {
     align-items: center; /* Vertically center the items */
     justify-content: space-between; /* Space between the title and the logo container */
     padding: 10px; /* Optional: add padding around the header */
-    background-color: #e1e1e1;
+    background-color: #d7d7d7;
     height: 3cm;
-
+    top: 0%;
+    
 }
 
 .title-text{
@@ -75,6 +91,7 @@ a {
     flex: 1;  /* Allows the skills section to grow if needed */
     font-size: 1.2rem;
     line-height: 1.6;
+    
 }
 
 .skills-container p {
@@ -86,25 +103,30 @@ a {
 /* Skills boxes aligned horizontally */
 .skills-boxes {
     display: flex;
-    gap: 10px;  /* Adds space between the skill boxes */
+    gap: 3.5px;  /* Adds space between the skill boxes */
+    background-color: #e1e1e1;
+    border-radius: 5px;
 }
 
 .skill-box {
-    background-color: #ccc;  /* Change to desired background color */
-    padding: 10px 20.5px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
-    white-space: nowrap;  /* Prevents text wrapping */
+    white-space: nowrap;
+    cursor: pointer; /* Make the skill-box look clickable */
+    transition: background-color 0.3s;
+
 }
+
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 180px);
     gap: 15px;
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .grid-image {
@@ -119,19 +141,6 @@ a {
 }
 
 
-.skill-box {
-    background-color: #e1e1e1;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    white-space: nowrap;
-    cursor: pointer; /* Make the skill-box look clickable */
-    transition: background-color 0.3s;
-    border: 2px solid #667b68;
-
-}
 
 .skill-box:hover {
     background-color: #aaa;
@@ -210,7 +219,6 @@ html, body {
     right: 80px; /* Distance from the right of the container */
     background: #e1e1e1; /* Background color for better readability */
     padding: 10px; /* Padding around the text */
-    border: 1px solid #737778; /* Border around the text */
     border-radius: 5px; /* Optional: rounded corners */
 }
 
@@ -239,7 +247,6 @@ html, body {
 
     background: #f1f0f0; /* Background color for better readability */
     padding: 5px; /* Padding around the text */
-    border: 1px solid #737778; /* Border around the text */
     border-radius: 5px; /* Optional: rounded corners */
 }
 
