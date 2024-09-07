@@ -32,8 +32,8 @@ a {
     align-items: center; /* Vertically center the items */
     justify-content: space-between; /* Space between the title and the logo container */
     padding: 10px; /* Optional: add padding around the header */
-    background-color: #e1e1e1
-    ;
+    background-color: #e1e1e1;
+    height: 3cm;
 
 }
 
@@ -175,15 +175,17 @@ html, body {
     gap: 10px; /* Space between logos, adjust as needed */
 }
 
-.Logo img, .Email img {
+.Logo img, .LinkedIn img, .Email img {
     display: block; /* Ensure there's no extra space around the images */
-    width: 100px; /* Set the width of the logos */
+    width: 75px; /* Set the width of the logos */
     height: auto; /* Maintain the aspect ratio */
-}
-
-.Email img {
     cursor: pointer; /* Indicates the email logo is clickable */
 }
+
+
+    
+
+
 
 /*-------------------------------------------------------*/
 
