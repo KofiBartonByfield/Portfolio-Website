@@ -26,9 +26,5 @@ PDF.js: For PDF rendering (if needed).
 
 
 
-colour pallette:
-#f8d3c5	(248,211,197)
-#fceee9	(252,238,233)
-#dde6d5	(221,230,213)
-#a3b899	(163,184,153)
-#667b68	(102,123,104)
+https://docs.google.com/forms/d/1mAzg3WcOZCq9ZZsWpKOoFJXbtojMB50Oe-i-fljy53w/edit?pli=1#responses
+

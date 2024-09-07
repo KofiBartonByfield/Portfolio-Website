@@ -3,7 +3,8 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    overflow-x: hidden
+    overflow-x: hidden;
+   
 }
 
 h1 {
@@ -17,27 +18,27 @@ a {
 }
 
 
-  
   body {
     display: flex;
     flex-direction: column;
   }
   
   footer {
-    margin-top: auto;
     background-color: #e1e1e1; 
-    padding: 20px; 
-    text-align: center; 
-    position: relative;
-  }
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width of the page */
+}
+
 /*-------------------------------------------------------*/
 
 
 .FirstScreen {
-    height: 200vh;
+    height: 275vh;
     background-color: whitesmoke;
     position: sticky;
     top: 0;
+    flex: 1; /* Takes up the remaining space, pushing the footer to the bottom */
 
 }
 
@@ -48,7 +49,7 @@ a {
     justify-content: space-between; /* Space between the title and the logo container */
     padding: 10px; /* Optional: add padding around the header */
     background-color: #d7d7d7;
-    height: 3cm;
+    height: 1.5cm;
     top: 0%;
     
 }
@@ -56,7 +57,7 @@ a {
 .title-text{
     text-align:left; 
     color:rgb(47, 46, 46); 
-    font-size: 3cm;
+    font-size: 1cm;
     font-family: Georgia, 'Times New Roman', Times, serif; 
     padding: 0cm 0.8cm;
     }
@@ -75,13 +76,16 @@ a {
 .headshot-container {
     flex: 0 0 auto;
     margin-right: 20px;  /* Add space between the headshot and the skills */
+    
 }
  
 .headshot {
     width: 300px;  /* Adjust the width of the image */
     height: auto;
     border-radius: 3.5%;
-    border: 2px solid #667b68;
+    border: 2px solid #d7d7d7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -91,6 +95,7 @@ a {
     flex: 1;  /* Allows the skills section to grow if needed */
     font-size: 1.2rem;
     line-height: 1.6;
+
     
 }
 
@@ -104,8 +109,10 @@ a {
 .skills-boxes {
     display: flex;
     gap: 3.5px;  /* Adds space between the skill boxes */
-    background-color: #e1e1e1;
+    background-color: #bebebe;
     border-radius: 5px;
+  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+
 }
 
 .skill-box {
@@ -130,15 +137,21 @@ a {
 }
 
 .grid-image {
-    width: auto; /* Allow images to scale proportionally */
     max-width: 90%; /* Make images less wide */
-    height: auto; /* Maintain aspect ratio */
+
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #667b68;
-    display: block;
+    display: none;
     margin: auto; /* Center images within grid cells */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
+.grid-image:hover {
+    border: 2px solid #ccc; /* Optional: add border for extra effect */
+}
+
 
 
 
@@ -151,13 +164,6 @@ a {
     color: white;
 }
 
-.grid-image {
-    display: none; /* Hide all images by default */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
 .grid-image.show {
     display: block; /* Show images with the 'show' class */
@@ -186,7 +192,7 @@ html, body {
 
 .Logo img, .LinkedIn img, .Email img {
     display: block; /* Ensure there's no extra space around the images */
-    width: 75px; /* Set the width of the logos */
+    width: 50px; /* Set the width of the logos */
     height: auto; /* Maintain the aspect ratio */
     cursor: pointer; /* Indicates the email logo is clickable */
 }
@@ -200,18 +206,19 @@ html, body {
 
 
 .pdf-container {
-    padding: 15px 100px; /* Adjust the padding as needed */
-    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
-}
+    border: 2px solid black; /* Border around PDF */
 
+    height: 1700px; /* Adjust based on your layout */
+}
 
 
 .pdf-wrapper {
-    position: relative; /* Make the wrapper a positioning context */
-    padding: 20px; /* Optional: add padding around the wrapper */
+    box-sizing: content-box; /* Ensures the padding is inside the border */
+    
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 150px;
 }
-
-
 
 .pdf-text {
     position: absolute; /* Absolute positioning */
@@ -252,15 +259,6 @@ html, body {
 
 
 
-.footer-main{
-    background-color: #e1e1e1; 
-    padding: 20px; 
-    text-align: center; 
-    position: relative; 
-    left: 0; 
-    bottom: 0; 
-    width: 100%;
-}
 
 /*-------------------------------------------------------*/
 
