@@ -1,59 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const skillBoxes = document.querySelectorAll('.skill-box');
-    const projectImages = document.querySelectorAll('.grid-image');
-    let selectedSkill = null; // Variable to track the currently selected skill
-
-    // Function to show all project images
-    function showAllImages() {
-        projectImages.forEach(image => image.classList.add('show'));
-    }
-
-    // Function to hide all project images
-    function hideAllImages() {
-        projectImages.forEach(image => image.classList.remove('show'));
-    }
-
-    // Show all images when the page loads
-    showAllImages();
-
-    skillBoxes.forEach(box => {
-        box.addEventListener('click', function () {
-            const skill = this.getAttribute('data-skill');
-
-            // If the same skill is clicked, unselect it
-            if (selectedSkill === skill) {
-                // Remove 'selected' class from all skill boxes
-                skillBoxes.forEach(box => box.classList.remove('selected'));
-                selectedSkill = null; // Reset selected skill
-
-                // Show all images (since none is selected)
-                showAllImages();
-            } else {
-                // Select a new skill
-                selectedSkill = skill;
-
-                // Remove 'selected' class from all skill boxes
-                skillBoxes.forEach(box => box.classList.remove('selected'));
-
-                // Add 'selected' class to the clicked box
-                this.classList.add('selected');
-
-                // Hide all images
-                hideAllImages();
-
-                // Show images that match the selected skill
-                projectImages.forEach(image => {
-                    if (image.getAttribute('data-skill') === selectedSkill) {
-                        image.classList.add('show');
-                    }
-                });
-            }
-        });
-    });
-});
-
-
-
 
 // Copy EMail to Clipboard
 document.addEventListener('DOMContentLoaded', function () {
@@ -86,5 +30,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//---------------------------------------------------------------------------------------
+// select project
+document.addEventListener('DOMContentLoaded', function () {
+    const skillBoxes = document.querySelectorAll('.skill-box');
+    const projectImages = document.querySelectorAll('.grid-image');
+    let selectedSkill = null; // Variable to track the currently selected skill
 
+    // Function to show all project images
+    function showAllImages() {
+        projectImages.forEach(image => image.classList.add('show'));
+    }
 
+    // Function to hide all project images
+    function hideAllImages() {
+        projectImages.forEach(image => image.classList.remove('show'));
+    }
+
+    // Show all images when the page loads
+    showAllImages();
+
+    skillBoxes.forEach(skillBox => {
+        skillBox.addEventListener('click', function () {
+            const skill = this.getAttribute('data-skill');
+
+            // Toggle active class for the clicked skill
+            this.classList.toggle('active');
+
+            // Collect all active skills
+            const activeSkills = Array.from(document.querySelectorAll('.skill-box.active')).map(skill => skill.getAttribute('data-skill'));
+
+            // If no skill is selected, show all images
+            if (activeSkills.length === 0) {
+                showAllImages();
+            } else {
+                // Hide all images initially
+                hideAllImages();
+
+                // Show images that match any selected skill
+                projectImages.forEach(image => {
+                    const imageSkills = image.getAttribute('data-skill').split(', ');
+                    const matchesSkill = activeSkills.some(skill => imageSkills.includes(skill));
+
+                    if (matchesSkill) {
+                        image.classList.add('show');
+                    }
+                });
+            }
+        });
+    });
+});
