@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden
 }
 
 h1 {
@@ -22,6 +23,7 @@ a {
     background-color: whitesmoke;
     position: sticky;
     top: 0;
+
 }
 
 
@@ -237,4 +239,16 @@ html, body {
     padding: 5px; /* Padding around the text */
     border: 1px solid #737778; /* Border around the text */
     border-radius: 5px; /* Optional: rounded corners */
+}
+
+
+
+.footer-main{
+    background-color: #e1e1e1; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%;
 }
