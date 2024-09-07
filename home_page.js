@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //---------------------------------------------------------------------------------------
 // select project
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const skillBoxes = document.querySelectorAll('.skill-box');
     const projectImages = document.querySelectorAll('.grid-image');
