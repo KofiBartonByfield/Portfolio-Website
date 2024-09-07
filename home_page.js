@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //---------------------------------------------------------------------------------------
 // select project
+
 document.addEventListener('DOMContentLoaded', function () {
     const skillBoxes = document.querySelectorAll('.skill-box');
     const projectImages = document.querySelectorAll('.grid-image');
-    let selectedSkill = null; // Variable to track the currently selected skill
 
     // Function to show all project images
     function showAllImages() {
@@ -52,8 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     skillBoxes.forEach(skillBox => {
         skillBox.addEventListener('click', function () {
-            const skill = this.getAttribute('data-skill');
-
             // Toggle active class for the clicked skill
             this.classList.toggle('active');
 
@@ -67,12 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Hide all images initially
                 hideAllImages();
 
-                // Show images that match any selected skill
+                // Show images that match ALL selected skills
                 projectImages.forEach(image => {
                     const imageSkills = image.getAttribute('data-skill').split(', ');
-                    const matchesSkill = activeSkills.some(skill => imageSkills.includes(skill));
+                    const matchesAllSkills = activeSkills.every(skill => imageSkills.includes(skill));
 
-                    if (matchesSkill) {
+                    if (matchesAllSkills) {
                         image.classList.add('show');
                     }
                 });

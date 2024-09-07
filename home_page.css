@@ -95,10 +95,7 @@ a {
     flex: 1;  /* Allows the skills section to grow if needed */
     font-size: 1.2rem;
     line-height: 1.6;
-
-    
 }
-
 .skills-container p {
     font-weight: bold;
     font-size: 1.5rem;
@@ -126,6 +123,14 @@ a {
     transition: background-color 0.3s;
 
 }
+
+.skill-box.active {
+    background-color: #f4c37f;
+    color: white;
+    background-color: #ced8e0;
+}
+
+
 
 
 .image-grid {
