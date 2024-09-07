@@ -18,11 +18,32 @@ a {
 
 
 .FirstScreen {
-    height: 500vh;
-    background-color: #E7EFF1;
+    height: 200vh;
+    background-color: whitesmoke;
     position: sticky;
     top: 0;
 }
+
+
+.header-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the title and the logo container */
+    padding: 10px; /* Optional: add padding around the header */
+    background-color: #e1e1e1
+    ;
+
+}
+
+.title-text{
+    text-align:left; 
+    color:rgb(47, 46, 46); 
+    font-size: 3cm;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 0cm 0.8cm;
+    }
+
+
 
 /* Flexbox container to align headshot and skills horizontally */
 .content-container {
@@ -42,7 +63,7 @@ a {
     width: 300px;  /* Adjust the width of the image */
     height: auto;
     border-radius: 3.5%;
-    border: 2px solid #737778;
+    border: 2px solid #667b68;
 }
 
 
@@ -90,14 +111,14 @@ a {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #737778;
+    border: 2px solid #667b68;
     display: block;
     margin: auto; /* Center images within grid cells */
 }
 
 
 .skill-box {
-    background-color: #ccc;
+    background-color: #e1e1e1;
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
@@ -106,6 +127,8 @@ a {
     white-space: nowrap;
     cursor: pointer; /* Make the skill-box look clickable */
     transition: background-color 0.3s;
+    border: 2px solid #667b68;
+
 }
 
 .skill-box:hover {
@@ -137,12 +160,6 @@ html, body {
 }
 
 
-.header-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Vertically center the items */
-    justify-content: space-between; /* Space between the title and the logo container */
-    padding: 10px; /* Optional: add padding around the header */
-}
 
 .T1 {
     margin: 0; /* Remove default margin around the heading */
@@ -176,10 +193,6 @@ html, body {
 
 
 
-
-
-
-
 .pdf-wrapper {
     position: relative; /* Make the wrapper a positioning context */
     padding: 20px; /* Optional: add padding around the wrapper */
@@ -189,9 +202,9 @@ html, body {
 
 .pdf-text {
     position: absolute; /* Absolute positioning */
-    top: 280px; /* Distance from the top of the container */
+    top: 165px; /* Distance from the top of the container */
     right: 80px; /* Distance from the right of the container */
-    background: #fff; /* Background color for better readability */
+    background: #e1e1e1; /* Background color for better readability */
     padding: 10px; /* Padding around the text */
     border: 1px solid #737778; /* Border around the text */
     border-radius: 5px; /* Optional: rounded corners */
@@ -201,8 +214,27 @@ html, body {
     font-size: 24px; /* Font size for the link */
     color: #2e3030; /* Text color */
     text-decoration: none; /* Remove underline */
+    background: #e1e1e1; /* Background color for better readability */
+
 }
 
 .pdf-text a:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+
+.pdf-description{
+    position: absolute; /* Absolute positioning */
+    top: 265px; /* Distance from the top of the container */
+    right: 20px; /* Distance from the right of the container */
+    font-size:medium;
+
+    width: 350px; /* Set the width of the logos */
+    height: auto; /* Maintain the aspect ratio */
+
+
+    background: #f1f0f0; /* Background color for better readability */
+    padding: 5px; /* Padding around the text */
+    border: 1px solid #737778; /* Border around the text */
+    border-radius: 5px; /* Optional: rounded corners */
 }
