@@ -36,26 +36,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const skillBoxes = document.querySelectorAll('.skill-box');
-    const projectImages = document.querySelectorAll('.grid-image');
+    const projectItems = document.querySelectorAll('.project-item');
 
-    // Function to show all project images
-    function showAllImages() {
-        projectImages.forEach(image => {
-            image.classList.add('show');
-            image.style.visibility = 'visible'; // Ensure the image is visible but in the grid layout
+    // Function to show all project items
+    function showAllItems() {
+        projectItems.forEach(item => {
+            item.classList.add('show');
+            item.style.visibility = 'visible'; // Ensure the item is visible
+            item.style.display = 'flex'; // Make sure it's shown in the layout
         });
     }
 
-    // Function to hide all project images
-    function hideAllImages() {
-        projectImages.forEach(image => {
-            image.classList.remove('show');
-            image.style.visibility = 'hidden'; // Keep the image in the layout but invisible
+    // Function to hide all project items
+    function hideAllItems() {
+        projectItems.forEach(item => {
+            item.classList.remove('show');
+            item.style.visibility = 'hidden'; // Keep the item in the layout but invisible
+            item.style.display = 'none'; // Remove it from the layout
         });
     }
 
-    // Show all images when the page loads
-    showAllImages();
+    // Show all items when the page loads
+    showAllItems();
 
     skillBoxes.forEach(skillBox => {
         skillBox.addEventListener('click', function () {
@@ -66,27 +68,32 @@ document.addEventListener('DOMContentLoaded', function () {
             const activeSkills = Array.from(document.querySelectorAll('.skill-box.active'))
                                       .map(skill => skill.getAttribute('data-skill'));
 
-            // If no skill is selected, show all images
+            // If no skill is selected, show all items
             if (activeSkills.length === 0) {
-                showAllImages();
+                showAllItems();
             } else {
-                // Hide all images initially
-                hideAllImages();
+                // Hide all items initially
+                hideAllItems();
 
-                // Show images that match ALL selected skills
-                projectImages.forEach(image => {
-                    const imageSkills = image.getAttribute('data-skill').split(', ');
+                // Show items that match ALL selected skills
+                projectItems.forEach(item => {
+                    const imageSkills = item.querySelector('img').getAttribute('data-skill').split(', ');
                     const matchesAllSkills = activeSkills.every(skill => imageSkills.includes(skill));
 
                     if (matchesAllSkills) {
-                        image.classList.add('show');
-                        image.style.visibility = 'visible'; // Ensure the matching images are visible
+                        item.classList.add('show');
+                        item.style.visibility = 'visible'; // Ensure the matching items are visible
+                        item.style.display = 'flex'; // Show the matching item in the layout
                     }
                 });
             }
         });
     });
 });
+
+
+
+
 
 
 // Search Funtion

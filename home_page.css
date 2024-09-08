@@ -32,7 +32,7 @@ footer {
 /* First Screen Section */
 .FirstScreen {
     height: 275vh;
-    background-color: whitesmoke;
+    background-color: white;
     position: sticky;
     top: 0;
     flex: 1;
@@ -45,7 +45,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #d7d7d7;
+    background-color: #12123a;
     height: 1cm;
     position: relative;
     top: 0;
@@ -54,7 +54,7 @@ footer {
 
 .title-text {
     text-align: left;
-    color: rgb(47, 46, 46);
+    color: white;
     font-size: 1.2cm;
     padding: 0 0.4cm;
     transition: color 0.3s ease-in-out; /* Smooth text color change */
@@ -101,7 +101,7 @@ footer {
 .skills-boxes {
     display: flex;
     gap: 3.5px;
-    background-color: #bebebe;
+    background-color: #1a1a54;
     border-radius: 5px;
 }
 
@@ -114,15 +114,16 @@ footer {
     white-space: nowrap;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s ease-in-out;
+    color: white;
 }
 
 .skill-box:hover {
-    background-color: #aaa;
+    background-color: #dd3636;
     transform: translateY(-2px); /* Subtle lift on hover */
 }
 
 .skill-box.selected, .skill-box.active {
-    background-color: #666;
+    background-color: #dd3636;
     color: white;
 }
 
@@ -281,3 +282,35 @@ footer {
     cursor: pointer;
 }
 
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between items */
+    padding-top: 15px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and title */
+}
+
+.project-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.thumbnail {
+    width: 110px; /* Adjust as needed */
+    height: auto;
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.title {
+    font-size: 20px;
+    color: #1a1a54; /* Text color */
+    font-weight: bold;
+    padding-left: 10px;
+}
