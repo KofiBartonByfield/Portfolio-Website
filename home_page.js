@@ -34,20 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
 // select project
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const skillBoxes = document.querySelectorAll('.skill-box');
     const projectImages = document.querySelectorAll('.grid-image');
 
     // Function to show all project images
     function showAllImages() {
-        projectImages.forEach(image => image.classList.add('show'));
+        projectImages.forEach(image => {
+            image.classList.add('show');
+            image.style.visibility = 'visible'; // Ensure the image is visible but in the grid layout
+        });
     }
 
     // Function to hide all project images
     function hideAllImages() {
-        projectImages.forEach(image => image.classList.remove('show'));
+        projectImages.forEach(image => {
+            image.classList.remove('show');
+            image.style.visibility = 'hidden'; // Keep the image in the layout but invisible
+        });
     }
 
     // Show all images when the page loads
@@ -59,7 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.toggle('active');
 
             // Collect all active skills
-            const activeSkills = Array.from(document.querySelectorAll('.skill-box.active')).map(skill => skill.getAttribute('data-skill'));
+            const activeSkills = Array.from(document.querySelectorAll('.skill-box.active'))
+                                      .map(skill => skill.getAttribute('data-skill'));
 
             // If no skill is selected, show all images
             if (activeSkills.length === 0) {
@@ -75,9 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     if (matchesAllSkills) {
                         image.classList.add('show');
+                        image.style.visibility = 'visible'; // Ensure the matching images are visible
                     }
                 });
             }
         });
     });
 });
+

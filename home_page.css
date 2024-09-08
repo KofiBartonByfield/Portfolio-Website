@@ -1,9 +1,13 @@
+/* General Styles */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease-in-out; /* Subtle transition for any background color change */
 }
 
 h1 {
@@ -11,104 +15,91 @@ h1 {
     padding: 0;
 }
 
-
 a {
-    text-decoration: none; /* Remove underline from all links */
+    text-decoration: none;
 }
 
-
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  footer {
-    background-color: #e1e1e1; 
-    padding: 20px; /* Adjust padding as needed */
+/* Footer */
+footer {
+    background-color: #e1e1e1;
+    padding: 20px;
     text-align: center;
-    width: 100%; /* Ensure it spans the full width of the page */
+    width: 100%;
+    transition: background-color 0.3s ease-in-out; /* Footer background transition */
 }
 
-/*-------------------------------------------------------*/
-
-
+/* First Screen Section */
 .FirstScreen {
     height: 275vh;
     background-color: whitesmoke;
     position: sticky;
     top: 0;
-    flex: 1; /* Takes up the remaining space, pushing the footer to the bottom */
-
+    flex: 1;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
 
-
+/* Header */
 .header-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Vertically center the items */
-    justify-content: space-between; /* Space between the title and the logo container */
-    padding: 10px; /* Optional: add padding around the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     background-color: #d7d7d7;
     height: 1.5cm;
-    top: 0%;
-    
+    position: relative;
+    top: 0;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color change on scroll */
 }
 
-.title-text{
-    text-align:left; 
-    color:rgb(47, 46, 46); 
+.title-text {
+    text-align: left;
+    color: rgb(47, 46, 46);
     font-size: 1cm;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    padding: 0cm 0.8cm;
-    }
+    padding: 0 0.8cm;
+    transition: color 0.3s ease-in-out; /* Smooth text color change */
+}
 
-
-
-/* Flexbox container to align headshot and skills horizontally */
+/* Content Container */
 .content-container {
     display: flex;
-    justify-content: flex-start;  /* Align items to the start */
     align-items: flex-start;
     margin-top: 20px;
 }
 
-/* Headshot section */
+/* Headshot */
 .headshot-container {
-    flex: 0 0 auto;
-    margin-right: 20px;  /* Add space between the headshot and the skills */
-    
+    margin-right: 20px;
 }
- 
+
 .headshot {
-    width: 300px;  /* Adjust the width of the image */
+    width: 300px;
     height: auto;
     border-radius: 3.5%;
     border: 2px solid #d7d7d7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    transition: transform 0.5s ease-in-out; /* Smooth zoom on hover */
 }
 
 
 
-/* Relevent Skills section */
+/* Skills Section */
 .skills-container {
-    flex: 1;  /* Allows the skills section to grow if needed */
+    flex: 1;
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
 .skills-container p {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Skills boxes aligned horizontally */
 .skills-boxes {
     display: flex;
-    gap: 3.5px;  /* Adds space between the skill boxes */
+    gap: 3.5px;
     background-color: #bebebe;
     border-radius: 5px;
-  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
-
 }
 
 .skill-box {
@@ -118,162 +109,143 @@ a {
     font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
-    cursor: pointer; /* Make the skill-box look clickable */
-    transition: background-color 0.3s;
-
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
-.skill-box.active {
-    background-color: #f4c37f;
+.skill-box:hover {
+    background-color: #aaa;
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.skill-box.selected, .skill-box.active {
+    background-color: #666;
     color: white;
-    background-color: #ced8e0;
 }
 
-
-
-
+/* Image Grid */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 180px);
-    gap: 15px;
+    gap: 10px;
     padding: 30px 0;
 }
 
 .grid-image {
-    max-width: 90%; /* Make images less wide */
-
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px;
-    display: none;
-    margin: auto; /* Center images within grid cells */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
 }
-.grid-image:hover {
-    border: 2px solid #ccc; /* Optional: add border for extra effect */
-}
-
-
-.skill-box:hover {
-    background-color: #aaa;
-}
-
-.skill-box.selected {
-    background-color: #666; /* Highlight the selected skill */
-    color: white;
-}
-
 
 .grid-image.show {
-    display: block; /* Show images with the 'show' class */
-}
-/*-------------------------------------------------------*/
-
-html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Ensure full height for absolute positioning */
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.02); /* Slight zoom-in for visible images */
 }
 
-
-
-.T1 {
-    margin: 0; /* Remove default margin around the heading */
-    color: rgb(47, 46, 46);
-    font-size: 4cm; /* Adjust font size as needed */
+.grid-image:hover {
+    transform: scale(1.08); /* Larger zoom-in on hover */
 }
 
-.LogoContainer {
-    display: flex; /* Align logos horizontally */
-    align-items: center; /* Vertically center the logos */
-    gap: 10px; /* Space between logos, adjust as needed */
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.Logo img, .LinkedIn img, .Email img {
-    display: block; /* Ensure there's no extra space around the images */
-    width: 50px; /* Set the width of the logos */
-    height: auto; /* Maintain the aspect ratio */
-    cursor: pointer; /* Indicates the email logo is clickable */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Slight expansion */
+    }
 }
 
-
-    
-
-
-
-/*-------------------------------------------------------*/
-
-
+/* PDF Container */
 .pdf-container {
-    border: 2px solid black; /* Border around PDF */
-
-    height: 1700px; /* Adjust based on your layout */
+    border: 2px solid black;
+    height: 1700px;
 }
-
 
 .pdf-wrapper {
-    box-sizing: content-box; /* Ensures the padding is inside the border */
-    
-    padding-left: 100px;
-    padding-right: 150px;
-    padding-bottom: 150px;
+    padding: 0 150px 150px 100px;
+    box-sizing: border-box;
 }
 
 .pdf-text {
-    position: absolute; /* Absolute positioning */
-    top: 165px; /* Distance from the top of the container */
-    right: 80px; /* Distance from the right of the container */
-    background: #e1e1e1; /* Background color for better readability */
-    padding: 10px; /* Padding around the text */
-    border-radius: 5px; /* Optional: rounded corners */
+    position: absolute;
+    top: 165px;
+    right: 80px;
+    background: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+
 }
 
 .pdf-text a {
-    font-size: 24px; /* Font size for the link */
-    color: #2e3030; /* Text color */
-    text-decoration: none; /* Remove underline */
-    background: #e1e1e1; /* Background color for better readability */
+    font-size: 24px;
+    color: #2e3030;
+}
+
+.pdf-text:hover {
+    transform: scale(1.05); /* Larger zoom-in on hover */
+    transition: transform 0.3s ease;
 
 }
 
-.pdf-text a:hover {
-    text-decoration: underline; /* Underline on hover */
+/* PDF Description */
+.pdf-description {
+    position: absolute;
+    top: 265px;
+    right: 20px;
+    width: 350px;
+    background: #f1f0f0;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-
-.pdf-description{
-    position: absolute; /* Absolute positioning */
-    top: 265px; /* Distance from the top of the container */
-    right: 20px; /* Distance from the right of the container */
-    font-size:medium;
-
-    width: 350px; /* Set the width of the logos */
-    height: auto; /* Maintain the aspect ratio */
-
-
-    background: #f1f0f0; /* Background color for better readability */
-    padding: 5px; /* Padding around the text */
-    border-radius: 5px; /* Optional: rounded corners */
-}
-
-
-
-
-/*-------------------------------------------------------*/
-
-
+/* Hours Table */
 .hours table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
+
 .hours table th, .hours table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
+
 .hours table th {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
+}
+
+/* Logo Container */
+.LogoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo img, .LinkedIn img, .Email img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.Logo img:hover, .LinkedIn img:hover, .Email img:hover {
+    transform: rotate(10deg); /* Subtle logo rotation on hover */
 }
