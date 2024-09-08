@@ -27,13 +27,14 @@ footer {
     text-align: center;
     width: 100%;
     transition: background-color 0.3s ease-in-out; /* Footer background transition */
+   
 }
 
 /* First Screen Section */
 .FirstScreen {
     height: 275vh;
     background-color: white;
-    position: sticky;
+    position: relative;
     top: 0;
     flex: 1;
     animation: fadeIn 1s ease-in-out; /* Fade-in animation */
@@ -288,6 +289,8 @@ footer {
     flex-direction: column;
     gap: 5px; /* Space between items */
     padding-top: 15px;
+    padding-bottom: 80px;
+
 }
 
 .project-item {
