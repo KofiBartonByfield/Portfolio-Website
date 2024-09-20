@@ -99,10 +99,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // Search Funtion
 
 document.getElementById('search').addEventListener('click', function() {
-    window.location.href = 'Pages/Footer Pages/Search.html'; 
+    window.location.href = 'Pages/Admin/Search.html'; 
   });
 
   // Optional: If you want the click on the icon to also trigger the redirection
   document.querySelector('.search-icon').addEventListener('click', function() {
-    window.location.href = 'Pages/Footer Pages/Search.html';
+    window.location.href = 'Pages/Admin/Search.html';
   });
