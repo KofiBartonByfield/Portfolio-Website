@@ -376,3 +376,56 @@ footer {
   
 
 
+
+
+
+  /*SEARCH BAR*/
+
+  
+  #search-container {
+    position: absolute;
+    max-width: 400px;    
+    margin: 0; /* Remove any auto centering */
+    left: 250px;
+}
+#search-bar {
+    width: 200px; /* Ensure the input takes up available space */
+    min-width: 150px; /* Adjust as needed */
+    padding: 12px 24px;
+    padding-right: 50px; /* Space for the icon */
+    border-radius: 24px;
+    font-size: 16px;
+    border: 0px;
+    outline: none;
+    background-color: #f0f0f0; /* Background color */
+}
+#search-project-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y:hidden;
+    background-color: #e8e3dc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it overlays other content */
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+
+}
+.search-project-item {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.search-project-item:hover {
+    background-color: #f0f0f0;
+}
+.search-project-item:last-child {
+    border-bottom: none;
+}

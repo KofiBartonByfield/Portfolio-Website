@@ -17,19 +17,30 @@
             </a>
 
 
-            <div class="search-bar">
-
-                <input 
-                  id="search" 
-                  type="search" 
-                  list="search-suggestions" 
-                  autocomplete="off"/>
 
 
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search projects..." onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
+                <ul id="search-project-list" onmousedown="keepDropdownOpen()">
+                    <li class="search-project-item" data-keywords="data analysis visualization">Data Analysis Project</li>
+                    <li class="search-project-item" data-keywords="machine learning predictive modeling">Machine Learning Model</li>
+                    <li class="search-project-item" data-keywords="web development javascript">Web Development Project</li>
+                    <li class="search-project-item" data-keywords="statistical analysis research">Statistical Analysis Report</li>
+                    <li class="search-project-item" data-keywords="data cleaning transformation">Data Cleaning Process</li>
+                    <li class="search-project-item" data-keywords="project management teamwork">Project Management</li>
+                    <li class="search-project-item" data-keywords="database sql querying">Database Design</li>
+                    <li class="search-project-item" data-keywords="visualization d3 charts">D3 Visualization</li>
+                </ul>
                 <img src="Images/Logo/Search Icon.png" alt="Search Icon" class="search-icon"/>
-               
 
-              </div>
+            </div>
+
+
+
+
+
+
+
 
 
             <div class="LogoContainer">

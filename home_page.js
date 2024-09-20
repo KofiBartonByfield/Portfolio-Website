@@ -98,11 +98,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Search Funtion
 
-document.getElementById('search').addEventListener('click', function() {
-    window.location.href = 'Pages/Admin/Search.html'; 
-  });
+function showProjects() {
+    const projectList = document.getElementById('search-project-list');
+    projectList.style.display = 'block';
+    limitProjects();
+}
 
-  // Optional: If you want the click on the icon to also trigger the redirection
-  document.querySelector('.search-icon').addEventListener('click', function() {
-    window.location.href = 'Pages/Admin/Search.html';
-  });
+function hideProjects() {
+    // Delay hiding to allow for clicks on the dropdown items
+    setTimeout(() => {
+        const projectList = document.getElementById('search-project-list');
+        projectList.style.display = 'none';
+    }, 150);
+}
+
+function keepDropdownOpen() {
+    // Prevent the dropdown from closing when clicking on the project list
+    document.getElementById('search-project-list').onblur = null;
+}
+
+function searchProjects() {
+    const input = document.getElementById('search-bar').value.toLowerCase();
+    const projectItems = document.querySelectorAll('.search-project-item');
+    let visibleCount = 0;
+
+    projectItems.forEach(item => {
+        const keywords = item.getAttribute('data-keywords').toLowerCase();
+        if (keywords.includes(input)) {
+            if (visibleCount < 6) {
+                item.style.display = 'block';
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+function limitProjects() {
+    const projectItems = document.querySelectorAll('.search-project-item');
+    projectItems.forEach((item, index) => {
+        if (index < 6) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
