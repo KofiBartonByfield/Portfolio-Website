@@ -46,7 +46,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #12123a;
+    /*background-color: #12123a;*/
+    background-color: #519fd0b0;
+
     height: 1cm;
     position: relative;
     top: 0;
@@ -102,7 +104,8 @@ footer {
 .skills-boxes {
     display: flex;
     gap: 3.5px;
-    background-color: #1a1a54;
+    /* background-color: #1a1a54;*/
+    background-color: #519fd0;
     border-radius: 5px;
 }
 
@@ -313,7 +316,7 @@ footer {
 
 .title {
     font-size: 20px;
-    color: #1a1a54; /* Text color */
+    color: #303030; /* Text color */
     font-weight: bold;
     padding-left: 10px;
 }
