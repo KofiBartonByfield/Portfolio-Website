@@ -22,19 +22,19 @@
 
 
             <div id="search-container">
-                <input type="text" id="search-bar" placeholder="Search Skills..." onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
+                <input type="text" id="search-bar" placeholder="R, Python, HTML" onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
                 <ul id="search-project-list" ">
 
                     <a href="Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html">
-                        <li class="search-project-item" data-keywords="Data Driven Blog python pandas">Data Driven Blog on HIV</li>
+                        <li class="search-project-item" data-keywords="python ">Data Driven Blog on HIV</li>
                     </a>
 
                     <a href="Pages/Data_Analytics_Exe/business_analytic_exe.html">
-                        <li class="search-project-item" data-keywords="Employee Retention Analytics random forrest R data regression Latex">Employee Retention Analytics</li>
+                        <li class="search-project-item" data-keywords="Analytics R data regression Latex">Employee Retention Analytics</li>
                     </a>
                     
                     <a href="Pages/CND/CDN_Exeter.html">
-                        <li class="search-project-item" data-keywords="MATLAB Latex SIR Model ">SIR Model in MATLAB</li>
+                        <li class="search-project-item" data-keywords="MATLAB Latex Model ">SIR Model in MATLAB</li>
                     </a>
 
                     <a href="Pages/Graphs_Coursework/Graphs_cw.html">
@@ -128,15 +128,17 @@
             <section class="Projects-container">
                 <p style="font-size: 0.8cm; color: #303030;">
                     Projects
+               
                 </p>
 
                
-                    
-                
                 <div class="pagination-controls">
-                    <button id="prevBtn" onclick="showPrevPage()">&#8592; Previous</button>
-                    <button id="nextBtn" onclick="showNextPage()">Next &#8594;</button>
+                    <button id="prevBtn" class="nav-button" onclick="showPrevPage()">&#8592; </button>
+                    <button id="nextBtn" class="nav-button" onclick="showNextPage()">&#8594;</button>
                 </div>
+
+
+
                 
                 <div class="image-grid" id="imageGrid">
                     <!-- Images will be dynamically inserted here -->

@@ -371,20 +371,36 @@ footer {
 
 
 
-.pagination-controls {
-    margin-bottom: 10px;
-}
 
 button {
-    left: 0;
-    padding: 10px 20px;
+    padding-top: 5  px;
+    padding-bottom: 5px;
     cursor: pointer;
-    background-color: #e8e3dc;
+    background-color: #6b8f8e;
+    border: 0px solid #2e3030;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px; /* Space between buttons */
+}
+   
+
+.projects-container {
+    display: flex; /* Ensure the text and buttons are in a row */
+    align-items: flex-start; /* Move the buttons upwards */
+}
+
+.pagination-controls {
+    display: flex; /* Align buttons next to each other */
+    margin-left: 900px; /* Spacing between text and buttons */
+}
+
+
+.nav-button {
+    font-size: 50px; /* Change this value to increase or decrease arrow size */
+    padding: 0px;
+    cursor: pointer;
+    background-color: #f1f1f1;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it overlays other content */
-   
-    border-radius: 10px;
-   
 }
