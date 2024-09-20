@@ -320,3 +320,58 @@ footer {
     font-weight: bold;
     padding-left: 10px;
 }
+
+/* time table css*/
+
+/* General container styles */
+.hours {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+   
+  }
+  
+  /* Header styling */
+  .availability-header {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .availability-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table header styling */
+  .table-header {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Table cell styling */
+  .day-cell, .hours-cell {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Alternating row colors for readability */
+  .availability-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for table rows */
+  .availability-table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
