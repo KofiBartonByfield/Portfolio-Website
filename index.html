@@ -7,6 +7,8 @@
     <title>Kofi Barton-Byfield</title>
     <link href="home_page.css" rel="stylesheet">
     <script src="home_page.js" defer></script>
+    <script src="projects.js" defer></script>
+
 </head>
 <body>
     <div class="FirstScreen">
@@ -21,18 +23,60 @@
 
             <div id="search-container">
                 <input type="text" id="search-bar" placeholder="Search Skills..." onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
-                <ul id="search-project-list" onmousedown="keepDropdownOpen()">
+                <ul id="search-project-list" ">
 
                     <a href="Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html">
-                        <li class="search-project-item" data-keywords="data blog python pandas">Data Driven Blog on HIV</li>
+                        <li class="search-project-item" data-keywords="Data Driven Blog python pandas">Data Driven Blog on HIV</li>
                     </a>
 
                     <a href="Pages/Data_Analytics_Exe/business_analytic_exe.html">
-                       
-                        <li class="search-project-item" data-keywords="random forrest R data regression ">Employee Retention Analytics</li>
-
+                        <li class="search-project-item" data-keywords="Employee Retention Analytics random forrest R data regression Latex">Employee Retention Analytics</li>
                     </a>
                     
+                    <a href="Pages/CND/CDN_Exeter.html">
+                        <li class="search-project-item" data-keywords="MATLAB Latex SIR Model ">SIR Model in MATLAB</li>
+                    </a>
+
+                    <a href="Pages/Graphs_Coursework/Graphs_cw.html">
+                        <li class="search-project-item" data-keywords="Ontology Report Mathematica Latex">Ontology Report</li>
+                    </a>
+
+                    <a href="Pages/Exeter_Diss/Exeter_Diss.html">
+                        <li class="search-project-item" data-keywords="Exeter University Dissertation HTML CSS Latex">Exeter University Dissertation</li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
+                    <a href="">
+                        <li class="search-project-item" data-keywords=""></li>
+                    </a>
+
 
 
                 </ul>
@@ -80,74 +124,25 @@
                 </figure>
             </section>
 
-            <!-- clickable skills-->
-            <section class="skills-container">
+            <!-- Projects-->
+            <section class="Projects-container">
                 <p style="font-size: 0.8cm; color: #303030;">
-                    Relevant Skills
+                    Projects
                 </p>
-                <div class="skills-boxes">
-                    <div class="skill-box" data-skill="python">Python</div>
-                    <div class="skill-box" data-skill="R">R</div>
-                    <div class="skill-box" data-skill="sql">SQL</div>       
-                    <div class="skill-box" data-skill="MATLAB">MATLAB</div>
-                    <div class="skill-box" data-skill="LEAN">LEAN</div>
-                    <div class="skill-box" data-skill="Mathematica">Mathematica</div>
-                    <div class="skill-box" data-skill="Random Forest">Random Forest</div>
-                    <div class="skill-box" data-skill="HTML"> HTML</div>
 
-
+               
+                    
+                
+                <div class="pagination-controls">
+                    <button id="prevBtn" onclick="showPrevPage()">&#8592; Previous</button>
+                    <button id="nextBtn" onclick="showNextPage()">Next &#8594;</button>
                 </div>
-
-                <!-- clickable projects-->
-                <div class="project-list">
-                    <div class="project-item">
-                        <a href="Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html">
-                            <img src="Images/Project Preview/Data blog on HIV.png" class="thumbnail" alt="Data Blog on HIV"  data-skill="python">
-                            <span class="title">Data Blog on HIV</span>
-                        </a>
-                    </div>
                 
-                    <div class="project-item" >
-                        <a href="Pages/CND/CDN_Exeter.html">
-                            <img src="Images/Project Preview/SIR.png" class="thumbnail" alt="SIR Model in MATLAB" data-skill="MATLAB">
-                            <span class="title">SIR Model in MATLAB</span>
-                        </a>
-                    </div>
+                <div class="image-grid" id="imageGrid">
+                    <!-- Images will be dynamically inserted here -->
+                </div>
                 
-                    <div class="project-item" >
-                        <a href="Pages/Graphs_Coursework/Graphs_cw.html">
-                            <img src="Images/Project Preview/Graphs.png" class="thumbnail" alt="Graphs Coursework" data-skill="Mathematica">
-                            <span class="title">Graphs Coursework</span>
-                        </a>
-                    </div>
                 
-                    <div class="project-item" >
-                        <a href="Pages/Exeter_Diss/Exeter_Diss.html">
-                            <img src="Images/Project Preview/Exeter Dissertation.png" class="thumbnail" alt="Exeter Dissertation" data-skill="LEAN, HTML">
-                            <span class="title">Exeter Dissertation</span>
-                        </a>
-                    </div>
-                
-                    <div class="project-item" >
-                        <a href="Pages/Data_Analytics_Exe/business_analytic_exe.html">
-                            <img src="Images/Project Preview/Employee Retention Analytics.png" class="thumbnail" alt="Employee Retention Analytics" data-skill="R, Random Forest">
-                            <span class="title">Employee Retention Analytics</span>
-                        </a>
-                    </div>
-
-                    <div class="project-item" >
-                        <a href="">
-                            <img src="Images/Project Preview/No Image.png" class="thumbnail" alt="" data-skill="">
-                            <span class="title">Project Not Found</span>
-                        </a>
-                    </div>
-                    <div class="project-item" >
-                        <a href="">
-                            <img src="Images/Project Preview/No Image.png" class="thumbnail" alt="" data-skill="">
-                            <span class="title">Project Not Found</span>
-                        </a>
-                    </div>
-                   
 
 
 

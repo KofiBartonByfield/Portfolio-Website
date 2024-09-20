@@ -90,89 +90,12 @@ footer {
 
 
 
-/* Skills Section */
-.skills-container {
-    flex: 1;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.skills-container p {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.skills-boxes {
-    display: flex;
-    gap: 3.5px;
-    /* background-color: #1a1a54;*/
-   background-color: #3e6064;
-    border-radius: 5px;
-}
-
-.skill-box {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    white-space: nowrap;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
-}
-
-.skill-box:hover {
-    background-color: #6b8f8e;
-    transform: translateY(-2px); /* Subtle lift on hover */
-    color: white;
-}
-
-.skill-box.selected, .skill-box.active {
-    background-color: #c9b99b;
-    color: white;
-}
-
-/* Image Grid */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 30px 0;
-}
-
-.grid-image {
-    width: 325px;
-    height: 170px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.grid-image.show {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.02); /* Slight zoom-in for visible images */
-}
-
-.grid-image:hover {
-    transform: scale(1.08); /* Larger zoom-in on hover */
-}
 
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05); /* Slight expansion */
-    }
-}
+
+
+
+
 
 /* PDF Container */
 .pdf-container {
@@ -218,7 +141,12 @@ footer {
     border-radius: 5px;
 }
 
-/* Hours Table */
+
+
+
+
+
+/* Time Table */
 .hours table {
     width: 100%;
     border-collapse: collapse;
@@ -233,6 +161,10 @@ footer {
 .hours table th {
     background-color: #f1f1f1;
 }
+
+
+
+
 
 /* Logo Container */
 .LogoContainer {
@@ -281,18 +213,7 @@ footer {
     text-decoration: none;
 }
 
-.thumbnail {
-    width: 110px; /* Adjust as needed */
-    height: auto;
-    border-radius: 4px; /* Optional: Add rounded corners */
-}
 
-.title {
-    font-size: 20px;
-    color: #303030; /* Text color */
-    font-weight: bold;
-    padding-left: 10px;
-}
 
 /* time table css*/
 
@@ -408,4 +329,62 @@ footer {
 }
 .search-project-item:last-child {
     border-bottom: none;
+}
+
+
+
+
+/*projects*/
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 1100px;
+    padding-top: 20px;
+}
+
+.image-item {
+    text-align: left;
+}
+
+.image-item img {
+    width: 300px;
+    height: 150px;
+    display: block;
+    align-items: center;
+}
+
+.image-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.image-item p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+
+
+
+
+.pagination-controls {
+    margin-bottom: 10px;
+}
+
+button {
+    left: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e8e3dc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it overlays other content */
+   
+    border-radius: 10px;
+   
 }
