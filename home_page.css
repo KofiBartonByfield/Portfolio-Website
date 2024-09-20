@@ -33,7 +33,7 @@ footer {
 /* First Screen Section */
 .FirstScreen {
     height: 275vh;
-    background-color: white;
+    background-color: #faf0e6;
     position: relative;
     top: 0;
     flex: 1;
@@ -46,8 +46,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    /*background-color: #12123a;*/
-    background-color: #519fd0b0;
+  /*  background-color: #519fd0b0;*/
+  background-color: #d9b99b;
 
     height: 1cm;
     position: relative;
@@ -105,7 +105,7 @@ footer {
     display: flex;
     gap: 3.5px;
     /* background-color: #1a1a54;*/
-    background-color: #519fd0;
+    background-color: #d2ae8cbd;
     border-radius: 5px;
 }
 
