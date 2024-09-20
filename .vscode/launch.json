@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open home_page.html",
-            "file": "c:\\Users\\15kof\\OneDrive\\Documents\\CODING PROJECTS\\Portfolio Website\\home_page.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\15kof\\OneDrive\\Documents\\CODING PROJECTS\\Portfolio Website\\index.html"
         }
     ]
 }
