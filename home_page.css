@@ -259,35 +259,6 @@ footer {
 
 
 
-.search-bar {
-    position: relative; /* Ensure positioning context for the icon */
-    display: flex;
-    align-items: center;
-    padding: 17px;
-    width: 100%;
-}
-
-.search-bar input {
-    width: 200px; /* Ensure the input takes up available space */
-    min-width: 150px; /* Adjust as needed */
-    padding: 12px 24px;
-    padding-right: 50px; /* Space for the icon */
-    border-radius: 24px;
-    font-size: 16px;
-    border: 0px;
-    outline: none;
-    background-color: #f0f0f0; /* Background color */
-}
-
-.search-icon {
-    position: absolute;
-    left: 180px; /* Adjust to fit your design */
-    top: 50%;
-    transform: translateY(-50%); /* Center the icon vertically */
-    height: 30px; /* Adjust as needed */
-    cursor: pointer;
-}
-
 
 .project-list {
     display: flex;
@@ -382,7 +353,15 @@ footer {
 
   /*SEARCH BAR*/
 
-  
+  .search-icon {
+    position: absolute;
+    left: 165px; /* Adjust to fit your design */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    height: 30px; /* Adjust as needed */
+    cursor: pointer;
+}
+
   #search-container {
     position: absolute;
     max-width: 400px;    
@@ -390,8 +369,8 @@ footer {
     left: 250px;
 }
 #search-bar {
-    width: 200px; /* Ensure the input takes up available space */
-    min-width: 150px; /* Adjust as needed */
+    width: 130px; /* Ensure the input takes up available space */
+    min-width: 130px; /* Adjust as needed */
     padding: 12px 24px;
     padding-right: 50px; /* Space for the icon */
     border-radius: 24px;
