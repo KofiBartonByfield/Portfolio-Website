@@ -381,26 +381,38 @@ button {
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-left: 10px; /* Space between buttons */
+    padding-left: 100px;
+ 
 }
    
 
 .projects-container {
-    display: flex; /* Ensure the text and buttons are in a row */
+    display:flex; /* Ensure the text and buttons are in a row */
     align-items: flex-start; /* Move the buttons upwards */
-}
-
-.pagination-controls {
-    display: flex; /* Align buttons next to each other */
-    margin-left: 900px; /* Spacing between text and buttons */
 }
 
 
 .nav-button {
-    font-size: 50px; /* Change this value to increase or decrease arrow size */
+    font-size: 30px; /* Change this value to increase or decrease arrow size */
     padding: 0px;
     cursor: pointer;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
+    background-color: #fffbf7;
+    border: 0px solid #ccc;
     border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  
+}
+
+#search-bar::placeholder {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px; /* Adjust the size */
+    color: #999999; /* Change the placeholder text color */
+    font-style: italic; /* Optional: Make the placeholder text italic */
+}
+
+#search-bar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px; /* Adjust the size */
+    color: #2e3030; /* Change the placeholder text color */
+    font-style: bold; /* Optional: Make the placeholder text italic */
 }
