@@ -33,7 +33,7 @@ footer {
 /* First Screen Section */
 .FirstScreen {
     height: 275vh;
-    background-color: #faf0e6;
+    background-color: #fffbf7;
     position: relative;
     top: 0;
     flex: 1;
@@ -46,8 +46,10 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-  /*  background-color: #519fd0b0;*/
-  background-color: #d9b99b;
+    /*background-color: #519fd0b0;*/
+ /* background-color: #d9b99b;*/
+  background-color: #6b8f8e;
+
 
     height: 1cm;
     position: relative;
@@ -81,7 +83,6 @@ footer {
     width: 300px;
     height: auto;
     border-radius: 3.5%;
-    border: 2px solid #d7d7d7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out; /* Smooth zoom on hover */
 }
@@ -105,7 +106,7 @@ footer {
     display: flex;
     gap: 3.5px;
     /* background-color: #1a1a54;*/
-    background-color: #d2ae8cbd;
+   background-color: #3e6064;
     border-radius: 5px;
 }
 
@@ -117,17 +118,18 @@ footer {
     font-weight: bold;
     white-space: nowrap;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
     color: white;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
 .skill-box:hover {
-    background-color: #dd3636;
+    background-color: #6b8f8e;
     transform: translateY(-2px); /* Subtle lift on hover */
+    color: white;
 }
 
 .skill-box.selected, .skill-box.active {
-    background-color: #dd3636;
+    background-color: #c9b99b;
     color: white;
 }
 
@@ -149,7 +151,6 @@ footer {
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-    border: 2px solid #d7d7d7;
 }
 
 .grid-image.show {
@@ -187,7 +188,7 @@ footer {
     position: absolute;
     top: 165px;
     right: 80px;
-    background: #e1e1e1;
+    background: #e8e3dc;
     padding: 10px;
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -211,7 +212,7 @@ footer {
     top: 265px;
     right: 20px;
     width: 350px;
-    background: #f1f0f0;
+    background: #e8e3dc;
     padding: 5px;
     border-radius: 5px;
 }
