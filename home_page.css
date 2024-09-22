@@ -10,10 +10,7 @@ html, body {
 
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-}
+
 
 a {
     text-decoration: none;
@@ -432,4 +429,23 @@ button {
     background-color: #ccc; /* Color of the divider */
     margin: 0 auto 25px; /* Space around the divider, auto left and right for centering */
     width: 90%; /* Width of the divider */
+    
+}
+
+
+
+
+.about-me {
+    top: auto;
+    padding-right: 100px;
+    margin-right: 100px;
+    
+}
+
+.about-me h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.about-me p {
+    line-height: 1.6; /* Improve readability */
 }
