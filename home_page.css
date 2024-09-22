@@ -452,7 +452,7 @@ button {
     white-space: nowrap;
     color: white;
     font-size: 20px; /* Adjust font size as needed */
-    animation: moveBanner 20s linear infinite; /* Animation duration and type */
+    animation: moveBanner 30s linear infinite; /* Animation duration and type */
 }
 
 @keyframes moveBanner {
