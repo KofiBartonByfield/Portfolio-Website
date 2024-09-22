@@ -31,67 +31,7 @@ const imageData = [
             link: 'Pages/Exeter_Diss/Exeter_Diss.html'
         },
         
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            link: 'index.html'
-        },
-       
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
-        {
-            src: 'Images/projects example.jpeg',
-            title: 'Example Project',
-            description: 'Short description',
-            link: 'index.html'
-        },
+        
     
 ];
 

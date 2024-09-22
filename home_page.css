@@ -439,3 +439,27 @@ button {
 
 
 
+.banner {
+    position: relative;
+    width: 100%;
+    height: 25px; /* Adjust height as needed */
+    background-color: #f39c12; /* Banner color */
+    overflow: hidden;
+}
+
+.banner-text {
+    position: absolute;
+    white-space: nowrap;
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+    animation: moveBanner 20s linear infinite; /* Animation duration and type */
+}
+
+@keyframes moveBanner {
+    0% {
+        left: 100%; /* Start off-screen right */
+    }
+    100% {
+        left: -100%; /* End off-screen left */
+    }
+}
