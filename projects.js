@@ -30,8 +30,18 @@ const imageData = [
             description: 'An academic dissertation completed for Exeter University, showcasing extensive research and analysis in HTML and CSS.',
             link: 'Pages/Exeter_Diss/Exeter_Diss.html'
         },
-        
-        
+        {
+            src: 'Images/Project Preview/chaos.png',
+            title: 'Chaos in a controlled population model',
+            description: 'Description tbc...',
+            link: 'Pages/CND/CDN_Exeter_2.html'
+        },
+        {
+            src: 'Images/Project Preview/No Image.png',
+            title: 'More Content coming soon!',
+            description: 'Description tbc...',
+            link: 'index.html'
+        },
     
 ];
 
