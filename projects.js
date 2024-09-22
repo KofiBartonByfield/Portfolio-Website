@@ -76,6 +76,9 @@ const imageData = [
 let currentPage = 0;
 const imagesPerPage = 6;
 
+
+
+
 function renderImages() {
     const imageGrid = document.getElementById('imageGrid');
     imageGrid.innerHTML = ''; // Clear previous images

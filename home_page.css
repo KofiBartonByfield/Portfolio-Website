@@ -146,23 +146,6 @@ footer {
 
 
 
-/* Time Table */
-.hours table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.hours table th, .hours table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.hours table th {
-    background-color: #f1f1f1;
-}
-
-
 
 
 
@@ -190,32 +173,28 @@ footer {
 
 
 
-
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Space between items */
-    padding-top: 15px;
-    padding-bottom: 80px;
-
-}
-
-.project-item {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Space between image and title */
-}
-
-.project-item a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-
-
 /* time table css*/
+
+
+
+/* Time Table */
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours table th, .hours table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.hours table th {
+    background-color: #f1f1f1;
+}
+
+
+
 
 /* General container styles */
 .hours {
@@ -336,21 +315,46 @@ footer {
 
 /*projects*/
 
+
+.projects-container {
+    display: flex; 
+    flex-direction: column; /* Stack children vertically */
+    align-items: stretch; /* Make child elements stretch to fill the width */
+}
+
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
     grid-gap: 20px;
-    width: 1100px;
-    padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+
+@media (max-width: 900px) { /* Adjust the breakpoint as needed */
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) { /* Further adjustment for very small screens */
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
 
 .image-item {
     text-align: left;
+    overflow: hidden; /* Ensure the content doesn't overflow its container */
+
 }
 
 .image-item img {
-    width: 300px;
-    height: 150px;
+    width: 350px;
+    height: auto;
     display: block;
     align-items: center;
 }
@@ -386,10 +390,6 @@ button {
 }
    
 
-.projects-container {
-    display:flex; /* Ensure the text and buttons are in a row */
-    align-items: flex-start; /* Move the buttons upwards */
-}
 
 
 .nav-button {
