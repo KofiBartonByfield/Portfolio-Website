@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kofi Barton-Byfield</title>
     <link href="../../home_page.css" rel="stylesheet"> 
+    <script src="../../search-container.js" defer></script>
+
 </head>
 <body>
-    <div id="container">
+   
         <div class="FirstScreen">
             <div class="header-container">
                 <a href="../../index.html">
@@ -15,6 +17,11 @@
                         Portfolio
                     </h1>
                 </a>
+
+                <div id="search-container">
+                    <div id="search-container-placeholder"></div>
+                </div>
+
                 <div class="LogoContainer">
 
 
@@ -42,8 +49,14 @@
         <!-- Title Above the PDF -->
         <h2 style="text-align:left; font-size: 1cm; margin-left: 100px;">
             Employee Retention Analytics: A Data-Driven Approach
+            
+            <div class="pdf-text">
+                <a href="https://github.com/KofiBartonByfield/Data-Analytics-Coursework" target="_blank">View Code on GitHub</a>
+            </div>
 
         </h2>
+        
+
         
 
         <div class="pdf-wrapper">
@@ -51,30 +64,16 @@
                     data="Business Analytics.pdf"
                     type="application/pdf"
                     width="80%"
-                    height="90%">
+                    height="90%"
+                    toolbar=0>
                     
                 </object>
             </div>
 
 
-                <div class="pdf-text">
-                    <a href="https://github.com/KofiBartonByfield/Data-Analytics-Coursework" target="_blank">View Code on GitHub</a>
-                </div>
-
-                <div class="pdf-description">
-                    A Brief Description: <br>
-                    <br>
-                    This report provides a comprehensive analysis of employee retention using advanced data analytics. 
-                    It leverages Random Forest and Logistic Regression models to evaluate key factors influencing employee 
-                    turnover. The report identifies trends, such as the impact of salary, time spent at the company, and 
-                    employee satisfaction. Insights are provided to inform targeted strategies for improving employee 
-                    retention across departments, with recommendations for data-driven decision-making and process deployment.
-                     This analysis serves as a foundation for businesses seeking to optimize workforce management and retention
-                      outcomes.
-                    
-                </div>
+               
         </div>
-    </div>
+ 
 
 
        <footer>
