@@ -453,6 +453,7 @@ button {
     color: white;
     font-size: 20px; /* Adjust font size as needed */
     animation: moveBanner 30s linear infinite; /* Animation duration and type */
+    
 }
 
 @keyframes moveBanner {
@@ -460,6 +461,6 @@ button {
         left: 100%; /* Start off-screen right */
     }
     100% {
-        left: -100%; /* End off-screen left */
+        left: -100%; /* Move left completely */
     }
 }
