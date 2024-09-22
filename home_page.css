@@ -101,45 +101,40 @@ footer {
 /* PDF Container */
 .pdf-container {
     border: 2px solid black;
-    height: 1700px;
+    max-height: 1500px;
+    width: 100%;
 }
 
 .pdf-wrapper {
-    padding: 0 150px 150px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
     box-sizing: border-box;
+    height: 100%;
+
 }
 
 .pdf-text {
-    position: absolute;
-    top: 165px;
-    right: 80px;
-    background: #e8e3dc;
+    position: relative;
+    background: #6b8f8ec3;
     padding: 10px;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    width: max-content;
+    height:fit-content;
+    padding-top: 0;
 
 }
 
+
 .pdf-text a {
-    font-size: 24px;
-    color: #2e3030;
+    font-size: 20px;
+    color: #f1f1f1
 }
 
 .pdf-text:hover {
     transform: scale(1.05); /* Larger zoom-in on hover */
     transition: transform 0.3s ease;
 
-}
-
-/* PDF Description */
-.pdf-description {
-    position: absolute;
-    top: 265px;
-    right: 20px;
-    width: 350px;
-    background: #e8e3dc;
-    padding: 5px;
-    border-radius: 5px;
 }
 
 
@@ -256,7 +251,6 @@ footer {
   .search-icon {
     position: relative;
     right: 45px; /* Ensure this value has units (e.g., px) */
-    cursor: pointer;
     background: none;
     border: none;
     font-size: 34px; /* Adjust size for text-based icons */
