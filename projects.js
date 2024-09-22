@@ -1,34 +1,37 @@
 const imageData = [
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 1',
-        description: 'This is a description of image 1.',
-        link: 'https://example.com/page1'  // Add a link for each image
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 2',
-        description: 'This is a description of image 2.',
-        link: 'https://example.com/page2'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 3',
-        description: 'This is a description of image 3.',
-        link: 'https://example.com/page3'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 4',
-        description: 'This is a description of image 4.',
-        link: 'https://example.com/page4'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 5',
-        description: 'This is a description of image 5.',
-        link: 'https://example.com/page5'
-    },
+    
+        {
+            src: 'Images/Project Preview/Data blog on HIV.png',
+            title: 'Data Driven Blog on HIV',
+            description: 'An insightful blog analyzing data related to HIV trends and research findings using Python.',
+            link: 'Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html'
+        },
+        {
+            src: 'Images/Project Preview/Employee Retention Analytics.png',
+            title: 'Employee Retention Analytics',
+            description: 'A comprehensive analysis of employee retention strategies utilizing R, data analytics, and LaTeX for documentation.',
+            link: 'Pages/Data_Analytics_Exe/business_analytic_exe.html'
+        },
+        {
+            src: 'Images/Project Preview/SIR.png',
+            title: 'SIR Model in MATLAB',
+            description: 'Modeling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.',
+            link: 'Pages/CND/CDN_Exeter.html'
+        },
+        {
+            src: 'Images/Project Preview/Graphs.png',
+            title: 'Ontology Report',
+            description: 'A detailed report on ontological structures created using Mathematica and documented in LaTeX.',
+            link: 'Pages/Graphs_Coursework/Graphs_cw.html'
+        },
+        {
+            src: 'Images/Project Preview/Exeter Dissertation.png',
+            title: 'Exeter University Dissertation',
+            description: 'An academic dissertation completed for Exeter University, showcasing extensive research and analysis in HTML and CSS.',
+            link: 'Pages/Exeter_Diss/Exeter_Diss.html'
+        },
+        
+    
     {
         src: 'Images/projects example.jpeg',
         title: 'Image Title 6',
@@ -94,7 +97,6 @@ function renderImages() {
         // Create the clickable link
         const linkElement = document.createElement('a');
         linkElement.href = image.link;
-        linkElement.target = '_blank'; // Opens the link in a new tab
 
         // Create the image element
         const imgElement = document.createElement('img');
