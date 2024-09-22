@@ -49,10 +49,7 @@ footer {
     background-color: #6b8f8e;
     height: 1cm;
    
-   
 }
-
-
 
 
 .title-text {
@@ -64,7 +61,6 @@ footer {
 }
 
 
-
 /* Content Container */
 .content-container {
     display: flex;
@@ -74,7 +70,8 @@ footer {
 
 /* Headshot */
 .headshot-container {
-    margin-right: 20px;
+   /* margin-right: 20px;*/
+    width: 100%;
 }
 
 .headshot {
@@ -83,8 +80,12 @@ footer {
     border-radius: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out; /* Smooth zoom on hover */
+    position: relative;
 }
 
+.about-me{
+    width: 50%;
+}
 
 
 
@@ -345,6 +346,7 @@ footer {
     padding-right: 50px;
     padding-left: 10px;
     padding-top: 0px;
+    
 }
 
 @media (max-width: 900px) { /* Adjust the breakpoint as needed */
@@ -363,6 +365,9 @@ footer {
 .image-item {
     text-align: left;
     overflow: hidden; /* Ensure the content doesn't overflow its container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
 
 }
 
@@ -435,31 +440,3 @@ button {
 
 
 
-
-.about-me {
-    top: auto;
-    padding-right: 100px;
-    margin-right: 100px;
-    
-}
-
-.about-me h2 {
-    margin-bottom: 15px; /* Space below the heading */
-}
-
-.about-me p {
-    line-height: 1.6; /* Improve readability */
-}
-
-
-
-/* Example of a media query for mobile devices */
-@media (max-width: 768px) {
-    .about-me {
-        padding: 15px; /* Less padding on smaller screens */
-    }
-
-    .header-container {
-        flex-direction: column; /* Stack header items vertically */
-    }
-}
