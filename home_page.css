@@ -47,11 +47,15 @@ footer {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px;
     background-color: #6b8f8e;
     height: 1cm;
+   
+   
 }
+
+
 
 
 .title-text {
@@ -146,6 +150,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: auto; /* Push this item to the far right */
+
 }
 
 .Logo img, .LinkedIn img, .Email img {
@@ -244,6 +250,16 @@ footer {
 
 
   /*SEARCH BAR*/
+
+
+  #search-container {
+    position:relative;
+    max-width: 400px;  
+    padding-left: 10px;
+   
+}
+
+
   .search-icon {
     position: relative;
     right: 45px; /* Ensure this value has units (e.g., px) */
@@ -259,12 +275,6 @@ footer {
 }
 
 
-  #search-container {
-    position:static;
-    max-width: 400px;    
-    margin: 0; /* Remove any auto centering */
-   /* right: 25%;*/
-}
 #search-bar {
     width: 130px; /* Ensure the input takes up available space */
     min-width: 130px; /* Adjust as needed */
