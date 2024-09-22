@@ -450,3 +450,16 @@ button {
 .about-me p {
     line-height: 1.6; /* Improve readability */
 }
+
+
+
+/* Example of a media query for mobile devices */
+@media (max-width: 768px) {
+    .about-me {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .header-container {
+        flex-direction: column; /* Stack header items vertically */
+    }
+}
