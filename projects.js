@@ -31,49 +31,68 @@ const imageData = [
             link: 'Pages/Exeter_Diss/Exeter_Diss.html'
         },
         
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+            link: 'index.html'
+        },
+       
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
+        {
+            src: 'Images/projects example.jpeg',
+            title: 'Example Project',
+            description: 'Short description',
+            link: 'index.html'
+        },
     
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 6',
-        description: 'This is a description of image 6.',
-        link: 'https://example.com/page6'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 7',
-        description: 'This is a description of image 7.',
-        link: 'https://example.com/page7'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 8',
-        description: 'This is a description of image 8.',
-        link: 'https://example.com/page8'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 9',
-        description: 'This is a description of image 9.',
-        link: 'https://example.com/page9'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 10',
-        description: 'This is a description of image 10.',
-        link: 'https://example.com/page10'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 11',
-        description: 'This is a description of image 11.',
-        link: 'https://example.com/page11'
-    },
-    {
-        src: 'Images/projects example.jpeg',
-        title: 'Image Title 12',
-        description: 'This is a description of image 12.',
-        link: 'https://example.com/page12'
-    }
 ];
 
 let currentPage = 0;
