@@ -2,7 +2,7 @@
 function loadSearchContainer() {
     const searchHTML = `
         <div id="search-container">
-            <input type="text" id="search-bar" placeholder="R, Python, HTML" onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
+            <input type="text" id="search-bar" placeholder="R, Python, HTML, ..." onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
             <ul id="search-project-list">
                 <a href="Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html">
                     <li class="search-project-item" data-keywords="python">Data Driven Blog on HIV</li>
