@@ -70,8 +70,8 @@ footer {
 
 /* Headshot */
 .headshot-container {
-   /* margin-right: 20px;*/
-    width: 100%;
+    margin-right: 20px;
+    width: 800px;
 }
 
 .headshot {
@@ -80,11 +80,10 @@ footer {
     border-radius: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out; /* Smooth zoom on hover */
-    position: relative;
 }
 
 .about-me{
-    width: 50%;
+    width: 100%;
 }
 
 
