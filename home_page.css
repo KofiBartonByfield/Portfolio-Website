@@ -59,11 +59,11 @@ footer {
 }
 
 .title-text {
+
     text-align: left;
     color: white;
     font-size: 1.2cm;
     /*padding: 0 0.4cm;*/
-    padding-top: 5px;
     transition: color 0.3s ease-in-out; /* Smooth text color change */
 }
 
@@ -253,21 +253,27 @@ footer {
 
 
   /*SEARCH BAR*/
-
   .search-icon {
-    position: absolute;
-    left: 165px; /* Adjust to fit your design */
-    top: 50%;
-    transform: translateY(-50%); /* Center the icon vertically */
-    height: 30px; /* Adjust as needed */
+    position: relative;
+    right: 45px; /* Ensure this value has units (e.g., px) */
     cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 34px; /* Adjust size for text-based icons */
+   
+    display: inline-block; /* Prevents pushing elements around */
+    vertical-align: middle; /* Aligns it with text if needed */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    color: #999999;
 }
 
+
   #search-container {
-    position: absolute;
+    position:relative;
     max-width: 400px;    
     margin: 0; /* Remove any auto centering */
-    left: 250px;
+    right: 215px;
 }
 #search-bar {
     width: 130px; /* Ensure the input takes up available space */
