@@ -63,7 +63,6 @@ footer {
     text-align: left;
     color: white;
     font-size: 1.2cm;
-    /*padding: 0 0.4cm;*/
     transition: color 0.3s ease-in-out; /* Smooth text color change */
 }
 
@@ -428,3 +427,9 @@ button {
 }
 
 
+.divider {
+    height: 1px; /* Thickness of the divider */
+    background-color: #ccc; /* Color of the divider */
+    margin: 0 auto 25px; /* Space around the divider, auto left and right for centering */
+    width: 90%; /* Width of the divider */
+}
