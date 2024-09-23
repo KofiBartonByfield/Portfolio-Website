@@ -3,7 +3,7 @@ const imageData = [
         {
             src: 'Images/Project Preview/Data blog on HIV.png',
             title: 'Data Driven Blog on HIV',
-            description: 'A data driven blog post analysing data trends of HIV prevelence and AIDS occurence in Sub-Sarahan Africa, completed using web scraping through pyhton.',
+            description: 'A data driven blog post analysing data trends of HIV prevalence and AIDS occurrence in Sub-Saharan Africa, completed using web scraping through Python',
             link: 'Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html'
         },
         {
@@ -15,7 +15,7 @@ const imageData = [
         {
             src: 'Images/Project Preview/SIR.png',
             title: 'SIR Model in MATLAB',
-            description: 'Modeling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.',
+            description: 'Modelling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.',
             link: 'Pages/CND/CDN_Exeter.html'
         },
         {
