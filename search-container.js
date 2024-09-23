@@ -14,10 +14,13 @@ function loadSearchContainer() {
                     <li class="search-project-item" data-keywords="MATLAB Latex">SIR Model in MATLAB</li>
                 </a>
                 <a href="Pages/Graphs_Coursework/Graphs_cw.html">
-                    <li class="search-project-item" data-keywords="Mathematica Latex">Ontology Report</li>
+                    <li class="search-project-item" data-keywords="Mathematica Latex Excel">Ontology Report</li>
                 </a>
                 <a href="Pages/Exeter_Diss/Exeter_Diss.html">
                     <li class="search-project-item" data-keywords="HTML CSS Latex">Exeter University Dissertation</li>
+                </a>
+                  <a href="Pages/CND/CDN_Exeter_2.html">
+                    <li class="search-project-item" data-keywords="MATLAB Latex">Chaos in a controlled population model</li>
                 </a>
             </ul>
 
