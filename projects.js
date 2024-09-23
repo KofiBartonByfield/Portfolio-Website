@@ -3,13 +3,13 @@ const imageData = [
         {
             src: 'Images/Project Preview/Data blog on HIV.png',
             title: 'Data Driven Blog on HIV',
-            description: 'An insightful blog analyzing data related to HIV trends and research findings using Python.',
+            description: 'A data driven blog post analysing data trends of HIV prevelence and AIDS occurence in Sub-Sarahan Africa, completed using web scraping through pyhton.',
             link: 'Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html'
         },
         {
             src: 'Images/Project Preview/Employee Retention Analytics.png',
             title: 'Employee Retention Analytics',
-            description: 'A comprehensive analysis of employee retention strategies utilizing R, data analytics, and LaTeX for documentation.',
+            description: 'A comprehensive analysis of employee retention strategies utilising R, data analytics, and LaTeX for documentation.',
             link: 'Pages/Data_Analytics_Exe/business_analytic_exe.html'
         },
         {
@@ -27,13 +27,13 @@ const imageData = [
         {
             src: 'Images/Project Preview/Exeter Dissertation.png',
             title: 'Exeter University Dissertation',
-            description: 'An academic dissertation completed for Exeter University, showcasing extensive research and analysis in HTML and CSS.',
+            description: 'An academic dissertation completed at Exeter University, investigating: "Improving feedback for student proofs with Lean and AI"',
             link: 'Pages/Exeter_Diss/Exeter_Diss.html'
         },
         {
             src: 'Images/Project Preview/chaos.png',
             title: 'Chaos in a controlled population model',
-            description: 'Description tbc...',
+            description: 'Exploring chaotic dynamics in a predator-prey population model using bifurcation diagrams and Lyapunov exponents, using MATLAB. ',
             link: 'Pages/CND/CDN_Exeter_2.html'
         },
         {
