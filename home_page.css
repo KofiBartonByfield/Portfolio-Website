@@ -257,6 +257,8 @@ footer {
     position:relative;
     max-width: 400px;  
     padding-left: 10px;
+    justify-content: flex-start;
+    display: flex;
    
 }
 
@@ -269,7 +271,7 @@ footer {
     font-size: 34px; /* Adjust size for text-based icons */
    
     display: inline-block; /* Prevents pushing elements around */
-    vertical-align: middle; /* Aligns it with text if needed */
+    vertical-align:baseline; /* Aligns it with text if needed */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     color: #999999;
@@ -279,7 +281,7 @@ footer {
 #search-bar {
     width: 130px; /* Ensure the input takes up available space */
     min-width: 130px; /* Adjust as needed */
-    padding: 12px 24px;
+    padding: 10px 24px;
     padding-right: 50px; /* Space for the icon */
     border-radius: 24px;
     border: 0px;
@@ -290,6 +292,7 @@ footer {
     font-size: 14px; /* Adjust the size */
     color: #999999; /* Change the placeholder text color */
     font-style: italic; /* Optional: Make the placeholder text italic */
+    margin: 7px;
 }
 
 #search-project-list {
