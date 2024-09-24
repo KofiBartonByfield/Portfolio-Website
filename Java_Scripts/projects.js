@@ -40,7 +40,7 @@ const imageData = [
             src: 'Images/Project Preview/No Image.png',
             title: 'More Content coming soon!',
             description: 'Description tbc...',
-            link: 'index.html'
+            link: 'home.html'
         },
     
 ];
