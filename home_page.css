@@ -149,8 +149,9 @@ footer {
 .LogoContainer {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3%;
     margin-left: auto; /* Push this item to the far right */
+    padding-right: 0.5%;
 
 }
 
@@ -467,4 +468,11 @@ button {
         left: -100%; /* Move left completely */
     }
    
+}
+
+
+.new-tab-icon{
+    width: 20px;
+    vertical-align:top;
+    padding-top: 1%;
 }
