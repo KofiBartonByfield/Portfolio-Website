@@ -1,40 +1,40 @@
 const imageData = [
     
         {
-            src: 'Images/Project Preview/Data blog on HIV.png',
+            src: '../Images/Project Preview/Data blog on HIV.png',
             title: 'Data Driven Blog on HIV',
             description: 'A data driven blog post analysing data trends of HIV prevalence and AIDS occurrence in Sub-Saharan Africa, completed using web scraping through Python',
-            link: 'Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html'
+            link: 'Data_Blog_on_HIV.html'
         },
         {
-            src: 'Images/Project Preview/Employee Retention Analytics.png',
+            src: '../Images/Project Preview/Employee Retention Analytics.png',
             title: 'Employee Retention Analytics',
             description: 'A comprehensive analysis of employee retention strategies utilising R, data analytics, and LaTeX for documentation.',
-            link: 'Pages/Data_Analytics_Exe/business_analytic_exe.html'
+            link: 'business_analytic_exe.html'
         },
         {
-            src: 'Images/Project Preview/SIR.png',
+            src: '../Images/Project Preview/SIR.png',
             title: 'SIR Model in MATLAB',
             description: 'Modelling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.',
-            link: 'Pages/CND/CDN_Exeter.html'
+            link: 'CDN_Exeter.html'
         },
         {
-            src: 'Images/Project Preview/Graphs.png',
+            src: '../Images/Project Preview/Graphs.png',
             title: 'Ontology Report',
             description: 'A detailed report on ontological structures created using Mathematica and documented in LaTeX.',
-            link: 'Pages/Graphs_Coursework/Graphs_cw.html'
+            link: 'Graphs_cw.html'
         },
         {
-            src: 'Images/Project Preview/Exeter Dissertation.png',
+            src: '../Images/Project Preview/Exeter Dissertation.png',
             title: 'Exeter University Dissertation',
             description: 'An academic dissertation completed at Exeter University, investigating: "Improving feedback for student proofs with Lean and AI"',
-            link: 'Pages/Exeter_Diss/Exeter_Diss.html'
+            link: 'Exeter_Diss.html'
         },
         {
-            src: 'Images/Project Preview/chaos.png',
+            src: '../Images/Project Preview/chaos.png',
             title: 'Chaos in a controlled population model',
             description: 'Exploring chaotic dynamics in a predator-prey population model using bifurcation diagrams and Lyapunov exponents, using MATLAB. ',
-            link: 'Pages/CND/CDN_Exeter_2.html'
+            link: 'CDN_Exeter_2.html'
         },
         {
             src: 'Images/Project Preview/No Image.png',

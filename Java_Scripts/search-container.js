@@ -4,22 +4,22 @@ function loadSearchContainer() {
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="R, Python, HTML, ..." onfocus="showProjects()" onblur="hideProjects()" onkeyup="searchProjects()">
             <ul id="search-project-list">
-                <a href="Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html">
+                <a href="Data_Blog_on_HIV.html">
                     <li class="search-project-item" data-keywords="python">Data Driven Blog on HIV</li>
                 </a>
-                <a href="Pages/Data_Analytics_Exe/business_analytic_exe.html">
+                <a href="business_analytic_exe.html">
                     <li class="search-project-item" data-keywords="R data Latex">Employee Retention Analytics</li>
                 </a>
-                <a href="Pages/CND/CDN_Exeter.html">
+                <a href="CDN_Exeter.html">
                     <li class="search-project-item" data-keywords="MATLAB Latex">SIR Model in MATLAB</li>
                 </a>
-                <a href="Pages/Graphs_Coursework/Graphs_cw.html">
+                <a href="Graphs_cw.html">
                     <li class="search-project-item" data-keywords="Mathematica Latex Excel">Ontology Report</li>
                 </a>
-                <a href="Pages/Exeter_Diss/Exeter_Diss.html">
+                <a href="Exeter_Diss.html">
                     <li class="search-project-item" data-keywords="HTML CSS Latex">Exeter University Dissertation</li>
                 </a>
-                  <a href="Pages/CND/CDN_Exeter_2.html">
+                  <a href="CDN_Exeter_2.html">
                     <li class="search-project-item" data-keywords="MATLAB Latex">Chaos in a controlled population model</li>
                 </a>
             </ul>
