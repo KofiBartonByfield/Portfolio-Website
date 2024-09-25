@@ -369,6 +369,7 @@ footer {
 .dropdown-container {
     position: relative;
     display: none;
+
 }
 
 .dropdown-button {
@@ -397,64 +398,19 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
     transform: translateX(-20px); /* Start slightly translated for animation */
     opacity: 0; /* Start with opacity 0 */
+    border-radius: 15px;
+
 }
 
 .dropdown-content.show {
     display: block; /* Show the dropdown when active */
     transform: translateX(0); /* Move to original position */
     opacity: 1; /* Fade in */
+
 }
 
 
 
-/*SUPPORT FOR MOBILE*/
-@media (max-width: 900px) { /* Adjust the breakpoint as needed */
-    .image-grid {grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */ }
-    .headshot {width: 200px;}
-    .headshot-container {max-width: 300px;}
-    .name{font-size: 20px;}
-    .about-me{font-size: 14px; }
-    .projects-title{font-size: 25px; }
-    
-    
-}
-
-@media (max-width: 600px) { /* Further adjustment for very small screens */
-    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
-    .headshot {width: 150px;}
-    .headshot-container {max-width: 250px;}
-    .name{font-size: 15px;}
-    .about-me{font-size: 13px; }
-    .projects-title{font-size: 20px; }
-    .image-item h3 {font-size: 10px;}
-
-    .Logo img, .LinkedIn img, .Email img {display: none;}
-      .Logo2 img, .LinkedIn2 img, .Email2 img {
-        width: 45px;
-        height: auto;
-        cursor: pointer;
-        transition: transform 0.3s ease;}
-    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {transform: rotate(5deg); /* Subtle logo rotation on hover */}
-    .dropdown-container {display: inline-block;}
-}
-
-
-
-@media (max-width: 400px) { /* Further adjustment for very small screens */
-    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
-    .headshot {width: 150px;}
-    .headshot-container {max-width: 250px;}
-    .name{font-size: 14px;}
-    .about-me{font-size: 13px; }
-    .projects-title{font-size: 20px; }
-    .image-item h3 {font-size: 10px;}
-
-    .Logo img, .LinkedIn img, .Email img {display: none;}
-
-   /* .search-container { display: none;}*/
-    .search-bar {width: 30px;min-width: 30px;}
-    .nav-button{font-size: 20px; /* Change this value to increase or decrease arrow size */}
-}
 
 
 
@@ -525,7 +481,7 @@ button {
 
 
 
-.nav-button {
+.nav-button .nav-button2 {
     font-size: 30px; /* Change this value to increase or decrease arrow size */
     padding: 0px;
     cursor: pointer;
@@ -533,6 +489,7 @@ button {
     border: 0px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
   
 }
 
@@ -579,4 +536,60 @@ button {
     width: 20px;
     vertical-align:top;
     padding-top: 1%;
+}
+
+
+
+
+/*SUPPORT FOR MOBILE*/
+@media (max-width: 900px) { /* Adjust the breakpoint as needed */
+    .image-grid {grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */ }
+    .headshot {width: 200px;}
+    .headshot-container {max-width: 300px;}
+    .name{font-size: 20px;}
+    .about-me{font-size: 14px; }
+    .projects-title{font-size: 25px; }
+    
+    
+}
+
+@media (max-width: 600px) { /* Further adjustment for very small screens */
+    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
+    .headshot {width: 150px;}
+    .headshot-container {max-width: 250px;}
+    .name{font-size: 15px;}
+    .about-me{font-size: 13px; }
+    .projects-title{font-size: 20px; }
+    .image-item h3 {font-size: 10px;}
+
+    .Logo img, .LinkedIn img, .Email img {display: none;}
+      .Logo2 img, .LinkedIn2 img, .Email2 img {
+        width: 45px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;}
+    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {transform: rotate(5deg); /* Subtle logo rotation on hover */}
+    .dropdown-container {display: inline-block;}
+}
+
+
+
+@media (max-width: 400px) { /* Further adjustment for very small screens */
+    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
+    .headshot {width: 150px;}
+    .headshot-container {max-width: 250px;}
+    .name{font-size: 14px;}
+    .about-me{font-size: 13px; }
+    .projects-title{font-size: 20px; }
+    .image-item h3 {font-size: 10px;}
+
+    .Logo img, .LinkedIn img, .Email img {display: none;}
+
+   /* .search-container { display: none;}*/
+    .search-bar {width: 30px;min-width: 30px;}
+    .nav-button{font-size: 20px; /* Change this value to increase or decrease arrow size */
+        display: inline-block;}
+        .arrows {
+            display: inline-block; }
+        
 }
