@@ -444,8 +444,8 @@ footer {
 
 @media (max-width: 400px) { /* Further adjustment for very small screens */
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
-    .headshot {width: 50px;}
-    .headshot-container {max-width: 150px;}
+    .headshot {width: 150px;}
+    .headshot-container {max-width: 250px;}
     .name{font-size: 15px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
@@ -453,10 +453,9 @@ footer {
 
     .Logo img, .LinkedIn img, .Email img {display: none;}
 
-    .search-container { display: none;
-       
-    }
-    
+   /* .search-container { display: none;}*/
+    .search-bar {width: 30px;}
+
 }
 
 
