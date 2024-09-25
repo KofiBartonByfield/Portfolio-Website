@@ -355,9 +355,7 @@ footer {
     grid-gap: 20px;
     width: 100%;
     box-sizing: border-box;
-    padding-right: 50px;
-    padding-left: 10px;
-    padding-top: 0px;
+    padding-right: 20px;
     
 }
 
@@ -446,7 +444,7 @@ footer {
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
     .headshot {width: 150px;}
     .headshot-container {max-width: 250px;}
-    .name{font-size: 15px;}
+    .name{font-size: 14px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
     .image-item h3 {font-size: 10px;}
@@ -454,8 +452,8 @@ footer {
     .Logo img, .LinkedIn img, .Email img {display: none;}
 
    /* .search-container { display: none;}*/
-    .search-bar {width: 30px;    min-width: 30px;}
-
+    .search-bar {width: 30px;min-width: 30px;}
+    .nav-button{font-size: 20px; /* Change this value to increase or decrease arrow size */}
 }
 
 
