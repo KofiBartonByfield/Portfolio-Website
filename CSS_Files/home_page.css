@@ -579,7 +579,7 @@ button {
 @media (max-width: 400px) { /* Further adjustment for very small screens */
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
     .headshot {width: 150px;}
-    .headshot-container {max-width: 250px;}
+    .headshot-container {max-width: 280px;}
     .name{font-size: 14px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
