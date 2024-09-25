@@ -583,7 +583,7 @@ button {
     .name{font-size: 14px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
-    .image-item h3 {font-size: 10px;}
+    .image-item h3 {font-size: 20px;}
 
     .Logo img, .LinkedIn img, .Email img {display: none;}
 
