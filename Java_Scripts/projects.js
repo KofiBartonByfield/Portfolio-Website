@@ -50,8 +50,10 @@ let imagesPerPage = 6; // Default value
 function adjustImagesPerPage() {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 600) {
-        imagesPerPage = 2; // For very small screens
+    if (screenWidth <= 400) {
+        imagesPerPage = 1; // For very small screens
+    } else if (screenWidth <= 600) {
+        imagesPerPage = 2; // For smaller screens
     } else if (screenWidth <= 900) {
         imagesPerPage = 4; // For smaller screens
     } else {
