@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 1600px;
+    height: 1800px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,7 @@ footer {
     overflow-y: auto; /* Allow scrolling in this section */
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
 }
 
 
@@ -68,6 +69,10 @@ footer {
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    max-width: 100%; /* Prevent it from growing beyond the viewport */
+
+
 }
 
 /* Headshot */
@@ -253,7 +258,7 @@ footer {
   /*SEARCH BAR*/
 
 
-  #search-container {
+  .search-container {
     position:relative;
     max-width: 400px;  
     padding-left: 10px;
@@ -264,8 +269,8 @@ footer {
 
 
   .search-icon {
-    position: relative;
-    right: 45px; /* Ensure this value has units (e.g., px) */
+    position: absolute;
+    right: 10px; /* Ensure this value has units (e.g., px) */
     background: none;
     border: none;
     font-size: 34px; /* Adjust size for text-based icons */
@@ -278,7 +283,7 @@ footer {
 }
 
 
-#search-bar {
+.search-bar {
     width: 130px; /* Ensure the input takes up available space */
     min-width: 130px; /* Adjust as needed */
     padding: 10px 24px;
@@ -293,6 +298,7 @@ footer {
     color: #999999; /* Change the placeholder text color */
     font-style: italic; /* Optional: Make the placeholder text italic */
     margin: 7px;
+    margin-right: 0px;
 }
 
 #search-project-list {
@@ -331,9 +337,9 @@ footer {
 
 
 
+.name{text-align: left; font-size: 30px; color: #303030; font-weight: bolder;}
 
-
-
+.projects-title{font-size: 35px; color: #303030; font-weight: bolder;}
 
 /*projects*/
 
@@ -355,17 +361,47 @@ footer {
     
 }
 
+
+
+.contents{
+    display: none;
+}
+
+
+/*SUPPORT FOR MOBILE*/
 @media (max-width: 900px) { /* Adjust the breakpoint as needed */
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-    }
+    .image-grid {grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */ }
+    .headshot {width: 200px;}
+    .headshot-container {max-width: 300px;}
+    .name{font-size: 20px;}
+    .about-me{font-size: 14px; }
+    .projects-title{font-size: 25px; }
+    
+    
 }
 
 @media (max-width: 600px) { /* Further adjustment for very small screens */
-    .image-grid {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
+    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
+    .headshot {width: 150px;}
+    .headshot-container {max-width: 250px;}
+    .name{font-size: 15px;}
+    .about-me{font-size: 13px; }
+    .projects-title{font-size: 20px; }
+    .image-item h3 {font-size: 10px;}
+
+    .Logo img, .LinkedIn img, .Email img {display: none;}
+    .contents{
+        display: flex;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
     }
+    /*.search-icon {display: none;}*/
+
 }
+
+
 
 
 .image-item {
