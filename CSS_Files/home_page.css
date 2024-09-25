@@ -481,7 +481,7 @@ button {
 
 
 
-.nav-button .nav-button2 {
+.nav-button, .nav-button2  {
     font-size: 30px; /* Change this value to increase or decrease arrow size */
     padding: 0px;
     cursor: pointer;
@@ -537,6 +537,8 @@ button {
     vertical-align:top;
     padding-top: 1%;
 }
+.arrows {
+    display: none; }
 
 
 
