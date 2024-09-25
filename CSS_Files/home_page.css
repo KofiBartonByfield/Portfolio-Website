@@ -431,30 +431,39 @@ footer {
     .image-item h3 {font-size: 10px;}
 
     .Logo img, .LinkedIn img, .Email img {display: none;}
-    .contents{
-        display: flex;
-            width: 60px;
-            height: 60px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-    }
-
-    .Logo2 img, .LinkedIn2 img, .Email2 img {
+      .Logo2 img, .LinkedIn2 img, .Email2 img {
         width: 45px;
         height: auto;
         cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-    
-    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {
-        transform: rotate(5deg); /* Subtle logo rotation on hover */
-    }
-    
-
-
-    .dropdown-container {display: inline-block;
-    }
+        transition: transform 0.3s ease;}
+    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {transform: rotate(5deg); /* Subtle logo rotation on hover */}
+    .dropdown-container {display: inline-block;}
 }
+
+
+
+@media (max-width: 400px) { /* Further adjustment for very small screens */
+    .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
+    .headshot {width: 150px;}
+    .headshot-container {max-width: 250px;}
+    .name{font-size: 15px;}
+    .about-me{font-size: 13px; }
+    .projects-title{font-size: 20px; }
+    .image-item h3 {font-size: 10px;}
+
+    .Logo img, .LinkedIn img, .Email img {display: none;}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
