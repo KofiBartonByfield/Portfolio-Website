@@ -454,7 +454,7 @@ footer {
     .Logo img, .LinkedIn img, .Email img {display: none;}
 
    /* .search-container { display: none;}*/
-    .search-bar {width: 30px;}
+    .search-bar {width: 30px;    min-width: 30px;}
 
 }
 
