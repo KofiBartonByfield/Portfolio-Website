@@ -589,9 +589,7 @@ button {
 
    /* .search-container { display: none;}*/
     .search-bar {width: 30px;min-width: 30px;}
-    .nav-button{font-size: 20px; /* Change this value to increase or decrease arrow size */
-        display: inline-block;}
-        .arrows {
-            display: inline-block; }
+    .nav-button{display: none;}
+        .arrows {display: inline-block; }
         
 }
