@@ -453,12 +453,7 @@ footer {
 
     .Logo img, .LinkedIn img, .Email img {display: none;}
 
-    .search-container {
-        position:relative;
-        max-width: 40px;  
-        padding-left: 10px;
-        justify-content: flex-start;
-        display: flex;
+    .search-container { display: none;
        
     }
     
