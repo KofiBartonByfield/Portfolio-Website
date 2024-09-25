@@ -363,9 +363,45 @@ footer {
 
 
 
-.contents{
+
+
+
+
+
+.dropdown-container {
+    position: relative;
     display: none;
 }
+
+.dropdown-button {
+    background-color: #6b8f8e; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 15px 15px; /* Some padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning for the dropdown */
+    right: 15%; /* Moves the dropdown out from the left */
+    background-color: #f1f1f1; /* Background color */
+    border: 1px solid #ccc; /* Border around the dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    padding: 15px; /* Padding inside the dropdown */
+    z-index: 1; /* Ensure dropdown appears above other content */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+    transform: translateX(-20px); /* Start slightly translated for animation */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+.dropdown-content.show {
+    display: block; /* Show the dropdown when active */
+    transform: translateX(0); /* Move to original position */
+    opacity: 1; /* Fade in */
+}
+
 
 
 /*SUPPORT FOR MOBILE*/
@@ -397,8 +433,22 @@ footer {
             cursor: pointer;
             transition: transform 0.3s ease;
     }
-    /*.search-icon {display: none;}*/
 
+    .Logo2 img, .LinkedIn2 img, .Email2 img {
+        width: 45px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {
+        transform: rotate(5deg); /* Subtle logo rotation on hover */
+    }
+    
+
+
+    .dropdown-container {display: inline-block;
+    }
 }
 
 

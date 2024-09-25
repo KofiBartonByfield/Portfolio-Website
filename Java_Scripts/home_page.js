@@ -76,3 +76,8 @@ function searchProjects() {
 
 
 
+// Contents dropdown
+function toggleDropdown() {
+    const dropdownContent = document.getElementById('dropdownContent');
+    dropdownContent.classList.toggle('show');
+}
