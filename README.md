@@ -5,7 +5,7 @@ Hello and welcome to my portfolio website repository.
 
 Simply click in this link to access the website
 
-https://kofibartonbyfield.github.io/Portfolio-Website/Pages/Data_Blog_on_HIV/Data_Blog_on_HIV.html
+https://kofibartonbyfield.github.io/Portfolio-Website/
 
 I began this project to teach myself the basics of HTML and CSS, however during the process I have obtained not only those skills but an interactive website to showcase my portfolio of data science projects (and a stronger grasp on Java scripts)
 
