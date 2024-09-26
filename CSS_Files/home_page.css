@@ -385,7 +385,7 @@ footer {
     display: none; /* Hidden by default */
     position: absolute; /* Absolute positioning for the dropdown */
     right: 15%; /* Moves the dropdown out from the left */
-    background-color: #779f9e9c; /* Background color */
+    background-color: #6b8f8e; /* Background color */
     border: 1px solid #ccc; /* Border around the dropdown */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
     padding: 15px; /* Padding inside the dropdown */
@@ -400,7 +400,7 @@ footer {
 .dropdown-content.show {
     display: block; /* Show the dropdown when active */
     transform: translateX(0); /* Move to original position */
-    opacity: 1; /* Fade in */
+    opacity: 0.95; /* Fade in */
 
 }
 
