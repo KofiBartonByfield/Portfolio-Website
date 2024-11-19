@@ -12,6 +12,12 @@ const imageData = [
         link: 'business_analytic_exe.html'
     },
     {
+        src: '../Images/Project Preview/java.png',
+        title: 'Java Script tools',
+        description: 'Beginner java script projects that I use throughout my own studies',
+        link: 'tools.html'
+    },
+    {
         src: '../Images/Project Preview/SIR.png',
         title: 'SIR Model in MATLAB',
         description: 'Modelling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.',

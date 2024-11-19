@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,59 @@
     <meta name="image" property="og:image" content="preview-image.png">
 
 </head>
+
+
+
+
+
+<style>
+    .word_counter_container {
+        padding: 20px; /* Adds padding inside the section */
+        max-width: 800px; /* Optional: limits the width of the container */
+    }
+
+    #word-count {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    textarea {
+        width: 100%; /* Makes the textarea fill the container width */
+        box-sizing: border-box; /* Ensures padding is included in width calculation */
+    }
+
+    #tabs_container{
+        margin-left: 20px;
+        vertical-align: baseline;
+    }
+
+    .tabs_names{
+        text-align: left;
+        color: rgb(224, 223, 223);
+        font-size: 0.6cm;
+        transition: color 0.3s ease-in-out; /* Smooth text color change */  
+        vertical-align: baseline;
+    }
+
+    .tabs_names:hover {
+    transform: scale(1.05); /* Larger zoom-in on hover */
+    transition: transform 0.3s ease;
+
+
+
+  
+}
+
+
+</style>
+
+
+
+
+
+
+
+
 <body>
     
     <div class="FirstScreen">
@@ -19,14 +73,15 @@
         <header class="header-container">
             <a href="home.html" class="no-underline">
                 <h1 class="title-text">Portfolio</h1>
-
-                
             </a>
 
 
             <div id="search-container">
                 <div id="search-container-placeholder"></div>
             </div>
+
+
+
 
             <div class="LogoContainer">
                 <div class="Logo">
@@ -82,79 +137,44 @@
            
         </div>
 
-        <!-- Headshot-->
-        <main class="content-container">
-            <section class="headshot-container">
-                <figure>
-                    <img src="../Images/England Headshot.JPG" alt="Kofi's Headshot" class="headshot">
-                    <figcaption class="name">
-                        Kofi Barton-Byfield
-
-
-                    </figcaption>
-                    <div class="about-me"> 
-                        <p>I'm Kofi Barton-Byfield, a former professional rugby player from Bath, UK, with a deep passion for data science and analytics. After completing a professional stint with Bath Rugby and Exeter Chiefs, I have shifted my focus towards building a successful career in data science.</p>
-
-                        <p>    I hold a B.Sc. in Mathematics from the University of Exeter, where I graduated with Upper Second-Class Honours (2:1), and I am currently pursuing an M.Sc. in Applied Social Data Science at Trinity College, Dublin. My academic background has equipped me with strong analytical skills and proficiency in a variety of programming languages and tools such as Python, R and MATLAB.</p>
-                            
-                        <p>   Feel free to explore my projects, and don't hesitate to connect with me!</p>
-                    </div>
-
-                </figure>
-            </section>
-
-            <!-- Projects-->
-            <section class="Projects-container">
-                <p class="projects-title">
-
-                    Projects
-
-                        <button id="prevBtn" class="nav-button" onclick="showPrevPage()">&#8592; </button>
-                        <button id="nextBtn" class="nav-button" onclick="showNextPage()">&#8594;</button>
-
-                        <div class="arrows">
-                            <button id="prevBtn" class="nav-button2" onclick="showPrevPage()">&#8592;</button>
-                            <button id="nextBtn" class="nav-button2" onclick="showNextPage()">&#8594;</button>
-                        </div>
-
-
-
-                </p>
-
         
-                <div class="divider"></div>
-
-                
-                <div class="image-grid" id="imageGrid">
-                    <!--  will be dynamically inserted here -->
-                </div>
-                
-                
-               
 
 
-                
+        <section class="word_counter_container">
 
-            
-                </div>
+            <h2>Word Counter</h2>
+
+            <textarea id="text-input" rows="10"  cols="100"placeholder="Type something..."></textarea>
+            <div id="word-count">Word count: 0</div>
+
+            <script>
+                document.getElementById('text-input').addEventListener('input', function() {
+                    let text = this.value.trim();
+                    let wordCount = text ? text.split(/\s+/).length : 0;
+                    document.getElementById('word-count').textContent = 'Word count: ' + wordCount;
+                });
+            </script>
+
+
+        </section>
 
 
 
-                
 
-            </section>
-
-        </main>
-
-
-        
-</div>
+        <div class="divider"></div>
 
 
 
 
 
-        <footer>
+
+
+
+
+
+</body>
+
+   <!--     <footer>
             <p>&copy; 2024 Kofi Barton-Byfield.</p>
             <p>
               
@@ -162,6 +182,6 @@
                 <a href="Contact_Me.html">Contact Me</a>
             </p>
         </footer>
+-->
 
-</body>
 </html>
