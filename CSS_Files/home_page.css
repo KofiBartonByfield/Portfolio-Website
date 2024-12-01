@@ -141,12 +141,6 @@ footer {
 
 
 
-
-
-
-
-
-
 /* Logo Container */
 .LogoContainer {
     display: flex;
@@ -157,96 +151,10 @@ footer {
 
 }
 
-.Logo img, .LinkedIn img, .Email img {
-    width: 45px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.Logo img:hover, .LinkedIn img:hover, .Email img:hover {
-    transform: rotate(5deg); /* Subtle logo rotation on hover */
-}
 
 
 
 
-
-
-
-/* time table css*/
-
-
-
-/* Time Table */
-.hours table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.hours table th, .hours table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.hours table th {
-    background-color: #f1f1f1;
-}
-
-
-
-
-/* General container styles */
-.hours {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-   
-  }
-  
-  /* Header styling */
-  .availability-header {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Table styling */
-  .availability-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Table header styling */
-  .table-header {
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  /* Table cell styling */
-  .day-cell, .hours-cell {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Alternating row colors for readability */
-  .availability-table tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-  }
-  
-  /* Hover effect for table rows */
-  .availability-table tbody tr:hover {
-    background-color: #f0f0f0;
-  }
-  
 
 
 
@@ -370,7 +278,7 @@ footer {
 }
 
 .dropdown-button {
-    background-color: #6b8f8e; /* Green background */
+    /*background-color: #6b8f8e; /* Green background */
     color: white; /* White text */
     border: none; /* No border */
    /* padding: 15px 15px; /* Some padding */
@@ -588,4 +496,15 @@ button {
     .nav-button{display: none;}
         .arrows {display: inline-block; }
         
+}
+
+
+
+.tools_title{
+    font-size: 0.8cm;
+    color: aliceblue;
+    padding-left: 10px;
+    vertical-align: baseline;
+
+
 }

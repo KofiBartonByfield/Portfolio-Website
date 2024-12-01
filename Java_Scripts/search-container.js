@@ -25,8 +25,8 @@ function loadSearchContainer() {
             </ul>
 
 <span class="search-icon" aria-label="Search">&#9816;</span>
+    </div>
 
-        </div>
     `;
     document.getElementById('search-container-placeholder').innerHTML = searchHTML;
 }
