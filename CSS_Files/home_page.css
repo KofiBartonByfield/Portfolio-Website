@@ -423,11 +423,12 @@ button {
     /*.tools_title{display: none;}*/
 
     .search-bar {width: 30px;min-width: 30px;}
-   
-   
+    .pdf-container {max-height: 700px;}
+
+    .pdf-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
 }
-
-
 
 @media (max-width: 400px) { /* Further adjustment for very small screens */
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
@@ -440,6 +441,7 @@ button {
 
 
     .tools_title{display: none;}
+    .pdf-container {max-height: 500px;}
 
 
    /* .search-container { display: none;}*/
