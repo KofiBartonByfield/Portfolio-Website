@@ -230,7 +230,7 @@ footer {
 
 
 
-.name{text-align: left; font-size: 30px; color: #303030; font-weight: bolder;}
+.headshot_name{text-align: left; font-size: 30px; color: #303030; font-weight: bolder;}
 
 .projects-title{font-size: 35px; color: #303030; font-weight: bolder;}
 
@@ -255,52 +255,16 @@ footer {
 
 
 
-
-
-
-
-.dropdown-container {
-    position: relative;
-    display: none;
+.tools_title{
+    font-size: 0.8cm;
+    color: aliceblue;
+    padding-left: 10px;
+    vertical-align: baseline;
 
 }
 
-.dropdown-button {
-    /*background-color: #6b8f8e; /* Green background */
-    color: white; /* White text */
-    border: none; /* No border */
-   /* padding: 15px 15px; /* Some padding */
-    cursor: pointer; /* Pointer cursor on hover */
-    /*border-radius: 10px;*/
-    padding: 0px;
-    margin: 0px;
-    width: 30px;
-    height: 30px;
-    
-}
 
-.dropdown-content {
-    display: none; /* Hidden by default */
-    position: absolute; /* Absolute positioning for the dropdown */
-    right: 15%; /* Moves the dropdown out from the left */
-    background-color: #6b8f8e; /* Background color */
-    border: 1px solid #ccc; /* Border around the dropdown */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
-    padding: 15px; /* Padding inside the dropdown */
-    z-index: 1; /* Ensure dropdown appears above other content */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
-    transform: translateX(-20px); /* Start slightly translated for animation */
-    opacity: 0; /* Start with opacity 0 */
-    border-radius: 15px;
 
-}
-
-.dropdown-content.show {
-    display: block; /* Show the dropdown when active */
-    transform: translateX(0); /* Move to original position */
-    opacity: 0.95; /* Fade in */
-
-}
 
 
 
@@ -440,9 +404,10 @@ button {
     .image-grid {grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */ }
     .headshot {width: 200px;}
     .headshot-container {max-width: 300px;}
-    .name{font-size: 20px;}
+    .headshot_name{font-size: 20px;}
     .about-me{font-size: 14px; }
     .projects-title{font-size: 25px; }
+
     
     
 }
@@ -451,19 +416,13 @@ button {
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
     .headshot {width: 150px;}
     .headshot-container {max-width: 250px;}
-    .name{font-size: 15px;}
+    .headshot_name{font-size: 15px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
     .image-item h3 {font-size: 10px;}
+    .tools_title{display: none;}
 
-    .Logo img, .LinkedIn img, .Email img {display: none;}
-      .Logo2 img, .LinkedIn2 img, .Email2 img {
-        width: 45px;
-        height: auto;
-        cursor: pointer;
-        transition: transform 0.3s ease;}
-    .Logo2 img:hover, .LinkedIn2 img:hover, .Email2 img:hover {transform: rotate(5deg); /* Subtle logo rotation on hover */}
-    .dropdown-container {display: inline-block;}
+   
 }
 
 
@@ -472,12 +431,14 @@ button {
     .image-grid {grid-template-columns: 1fr; /* 1 column on very small screens */}
     .headshot {width: 150px;}
     .headshot-container {max-width: 280px;}
-    .name{font-size: 14px;}
+    .headshot_name{font-size: 14px;}
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
     .image-item h3 {font-size: 20px;}
 
-    .Logo img, .LinkedIn img, .Email img {display: none;}
+
+    .tools_title{display: none;}
+
 
    /* .search-container { display: none;}*/
     .search-bar {width: 30px;min-width: 30px;}
@@ -486,13 +447,3 @@ button {
         
 }
 
-
-
-.tools_title{
-    font-size: 0.8cm;
-    color: aliceblue;
-    padding-left: 10px;
-    vertical-align: baseline;
-
-
-}
