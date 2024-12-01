@@ -27,16 +27,6 @@ footer {
     margin-top: 50px;
 }
 
-/* First Screen Section */
-.FirstScreen {
-    height: 100%;
-    background-color: #fffbf7;
-    flex: 1; /* This allows the main content area to grow and fill the space */
-    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
-    overflow-y: auto; /* Allow scrolling in this section */
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-}
 
 
 
@@ -125,12 +115,13 @@ footer {
     padding-top: 0;
     margin-top: 10px;
 
+
 }
 
 
 .pdf-text a {
     font-size: 20px;
-    color: #f1f1f1
+    color: white;
 }
 
 .pdf-text:hover {
@@ -162,16 +153,13 @@ footer {
 
   /*SEARCH BAR*/
 
-
   .search-container {
     position:relative;
     max-width: 400px;  
     padding-left: 10px;
     justify-content: flex-start;
-    display: flex;
-   
+    display: flex;   
 }
-
 
   .search-icon {
     position: absolute;
