@@ -420,8 +420,10 @@ button {
     .about-me{font-size: 13px; }
     .projects-title{font-size: 20px; }
     .image-item h3 {font-size: 10px;}
-    .tools_title{display: none;}
+    /*.tools_title{display: none;}*/
 
+    .search-bar {width: 30px;min-width: 30px;}
+   
    
 }
 
