@@ -1,5 +1,11 @@
 const imageData = [
     {
+        src: '../Images/Project Preview/kmeans.png',
+        title: 'K-Means Clustering on Airbnb Listings',
+        description: 'This project applies K-Means clustering to Airbnb listings in Hawaii, uncovering patterns and segmenting properties based on features like price, location, and availability to gain insights into the rental market.',
+        link: 'k_means.html'
+    },
+    {
         src: '../Images/Project Preview/Data blog on HIV.png',
         title: 'Data Driven Blog on HIV',
         description: 'A data driven blog post analysing data trends of HIV prevalence and AIDS occurrence in Sub-Saharan Africa, completed using web scraping through Python',
