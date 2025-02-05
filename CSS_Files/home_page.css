@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-   /* height: 1800px;*/
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
@@ -26,7 +25,7 @@ footer {
     width: 100%;
     margin-top: auto; /* Ensure it stays at the bottom of the content */
     transition: background-color 0.3s ease-in-out;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 
@@ -67,6 +66,7 @@ footer {
 .headshot-container {
     margin-right: 20px;
    max-width: 400px;
+   
 }
 
 .headshot {
@@ -169,10 +169,10 @@ footer {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    grid-gap: 20px;
+    grid-gap: 2%;
     width: 100%;
     box-sizing: border-box;
-    padding-right: 20px;
+    padding-right: 2%;
     
 }
 
@@ -213,6 +213,8 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 8px;
+    width: 90%;
+    margin: 1%;
 
 }
 
@@ -224,7 +226,7 @@ footer {
 
 
 .image-item img {
-    width: 350px;
+    width: 80%;
     height: auto;
     display: block;
     align-items: center;
