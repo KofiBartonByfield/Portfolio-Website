@@ -16,6 +16,8 @@ a {
     color: #2e3030;
 }
 
+
+
 /* Footer */
 footer {
     background-color: #779f9e9c;
@@ -139,91 +141,13 @@ footer {
     gap: 3%;
     margin-left: auto; /* Push this item to the far right */
     padding-right: 0.5%;
-
+    
 }
 
 
 
 
 
-
-
-
-
-
-  /*SEARCH BAR*/
-
-  .search-container {
-    position:relative;
-    max-width: 400px;  
-    padding-left: 10px;
-    justify-content: flex-start;
-    display: flex;   
-}
-
-  .search-icon {
-    position: absolute;
-    right: 10px; /* Ensure this value has units (e.g., px) */
-    background: none;
-    border: none;
-    font-size: 34px; /* Adjust size for text-based icons */
-   
-    display: inline-block; /* Prevents pushing elements around */
-    vertical-align:baseline; /* Aligns it with text if needed */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    color: #999999;
-}
-
-
-.search-bar {
-    width: 130px; /* Ensure the input takes up available space */
-    min-width: 130px; /* Adjust as needed */
-    padding: 10px 24px;
-    padding-right: 50px; /* Space for the icon */
-    border-radius: 24px;
-    border: 0px;
-    outline: none;
-    background-color: #f0f0f0; /* Background color */
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px; /* Adjust the size */
-    color: #999999; /* Change the placeholder text color */
-    font-style: italic; /* Optional: Make the placeholder text italic */
-    margin: 7px;
-    margin-right: 0px;
-}
-
-#search-project-list {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    max-height: 150px;
-    overflow-y:hidden;
-    background-color: #e8e3dc;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it overlays other content */
-    padding: 0;
-    margin: 0;
-    border-radius: 10px;
-
-}
-.search-project-item {
-    padding: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-}
-.search-project-item:hover {
-    background-color: #f0f0f0;
-}
-.search-project-item:last-child {
-    border-bottom: none;
-}
 
 
 
@@ -260,6 +184,8 @@ footer {
     color: aliceblue;
     padding-left: 10px;
     vertical-align: baseline;
+    display: inline-block; /* Ensures the div inside <a> is clickable */
+    cursor: pointer; /* Changes cursor to indicate clickability */
 
 }
 
