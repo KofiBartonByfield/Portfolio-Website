@@ -4,9 +4,8 @@ document.write(`
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kofi Barton-Byfield</title>
     <link href="../CSS_Files/home_page.css" rel="stylesheet">
-    <script src="../Java_Scripts/home_page.js" defer></script>
+  
     <script src="../Java_Scripts/projects.js" defer></script>
-    <script src="../Java_Scripts/search-container.js" defer></script>
     <script src="../Java_Scripts/header.js" defer></script>
 
     <meta name="image" property="og:image" content="preview-image.png">
