@@ -7,6 +7,8 @@ document.write(`
     <script src="../Java_Scripts/home_page.js" defer></script>
     <script src="../Java_Scripts/projects.js" defer></script>
     <script src="../Java_Scripts/search-container.js" defer></script>
+    <script src="../Java_Scripts/header.js" defer></script>
+
     <meta name="image" property="og:image" content="preview-image.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../Images/Logo/apple-touch-icon.png">
