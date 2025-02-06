@@ -6,6 +6,12 @@ const imageData = [
         link: 'k_means.html'
     },
     {
+        src: '../Images/Project Preview/descision_tree.png',
+        title: 'Comparing Machine Learning Models',
+        description: 'A machine learning project comparing classification models for handwritten digit recognition, evaluating performance using scikit-learn and cross-validation',
+        link: 'digits_classifier.html'
+    },
+    {
         src: '../Images/Project Preview/Data blog on HIV.png',
         title: 'Data Driven Blog on HIV',
         description: 'A data driven blog post analysing data trends of HIV prevalence and AIDS occurrence in Sub-Saharan Africa, completed using web scraping through Python',
