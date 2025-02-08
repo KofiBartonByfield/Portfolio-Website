@@ -1,75 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../Java_Scripts/head.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kofi Barton-Byfield</title>
+    <!--<link href="../CSS_Files/home_page.css" rel="stylesheet"> -->
+
+    <script src="../Java_Scripts/header.js" defer></script>
+    <script src="../Java_Scripts/footer.js" defer></script>
+
+
+    <meta name="image" property="og:image" content="preview-image.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../Images/Logo/apple-touch-icon.png">
+    <link href="../CSS_Files/css.css" rel="stylesheet">
+
 </head>
-    
+
 <body>
-    
-    <!-- Title and top right logos -->
     <div id="header-placeholder"></div>
 
-    <!--
-    <div class="banner">
-        <div 
-            class="banner-text" id="bannerText">🚧 Still under construction! Some features are a work in progress, but feel free to explore and check back soon for updates! 🚧
-        </div>
-    </div>
-    -->
+    <!-- Main container with two sections (Headshot + Posts) -->
+    <div class="main-container">
 
-    <!-- Headshot-->
-    <main class="content-container">
+        
+        <!-- Left section: Headshot and About Me -->
         <section class="headshot-container">
             <figure>
                 <img src="../Images/graduation_photo.JPEG" alt="Kofi's Headshot" class="headshot">
                 <figcaption class="headshot_name">
                     Kofi Barton-Byfield
-
-
                 </figcaption>
                 <div class="about-me"> 
-                    <p>I'm Kofi Barton-Byfield, a former professional rugby player from Bath, UK, with a deep passion for data science and analytics. After completing a professional stint with Bath Rugby and Exeter Chiefs, I have shifted my focus towards building a successful career in data science.</p>
+                    <p>
+                        <li>B.Sc. Mathematics</li>
+                        <li>M.Sc. Applied Social Data Science</li>
+                    </p>
+                  
+                    <p>I'm Kofi Barton-Byfield, a former professional rugby player turned data scientist. I specialise in analytics and programming, with experience in Python, R, SQLite and MATLAB.</p>
+                    <p>Explore my projects and feel free to reach out!</p>
 
-                    <p>    I hold a B.Sc. in Mathematics from the University of Exeter, where I graduated with Upper Second-Class Honours (2:1), and I am currently pursuing an M.Sc. in Applied Social Data Science at Trinity College, Dublin. My academic background has equipped me with strong analytical skills and proficiency in a variety of programming languages and tools such as Python, R and MATLAB.</p>
-                        
-                    <p>   Feel free to explore my projects, and don't hesitate to contact me!</p>
                 </div>
-
             </figure>
         </section>
 
-        <!-- Projects-->
-        <section class="Projects-container">
-            <p class="projects-title">
+        <!-- Right section: Posts -->
+        <div class="posts-container">
 
-                Projects
+            <h1> Projects</h1>
 
-                    <button id="prevBtn" class="nav-button" onclick="showPrevPage()">&#8592; </button>
-                    <button id="nextBtn" class="nav-button" onclick="showNextPage()">&#8594;</button>
 
-                    <div class="arrows">
-                        <button id="prevBtn" class="nav-button2" onclick="showPrevPage()">&#8592;</button>
-                        <button id="nextBtn" class="nav-button2" onclick="showNextPage()">&#8594;</button>
+
+
+
+
+            <article class="post"> 
+                <img src="../Images/Project Preview/kmeans.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="k_means.html">K-Means Clustering on Airbnb Listings</a></h3>
+                        <p class="datestamp">Dec, 2024</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">Python</div>
+                        <div class="tag">K-Means Clustering</div>
+                    </div>
+                    <div class="post_description">
+                        This project applies K-Means clustering to Airbnb listings in Hawaii, uncovering patterns and segmenting properties based on features like price, location, and availability to gain insights into the rental market.
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/descision_tree.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="digits_classifier.html">Comparing Machine Learning Models</a></h3>
+                        <p class="datestamp">Jan, 2025</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">Python</div>
+                        <div class="tag">Machine Learning</div>
+                        <div class="tag">Supervised Learning</div>
+
                     </div>
 
-            </p>
-
-    
+                    <div class="post_description">
+                        A machine learning project comparing classification models for handwritten digit recognition, evaluating performance using scikit-learn and cross-validation
+                    </div>
+                </div>
+            </article>
             <div class="divider"></div>
-
             
-            <div class="image-grid" id="imageGrid">
-                <!--  will be dynamically inserted here -->
-            </div>
+            <article class="post"> 
+                <img src="../Images/Project Preview/Data blog on HIV.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="Data_Blog_on_HIV.html">Data Driven Blog on HIV</a></h3>
+                        <p class="datestamp">Mar, 2024</p>
+                    </div>
             
-        
-        </section>
-    </main>
-   
+                    <div class="tags">
+                        <div class="tag">Python</div>
+                        <div class="tag">Web Scraping</div>
+                        <div class="tag">Random Forest</div>
 
+                    </div>
+                    <div class="post_description">
+                        A data driven blog post analysing data trends of HIV prevalence and AIDS occurrence in Sub-Saharan Africa, completed using web scraping through Python
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/Employee Retention Analytics.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="business_analytic_exe.html">Employee Retention Analytics</a></h3>
+                        <p class="datestamp">Nov, 2023</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">R-Studio</div>
+                        <div class="tag">Random Forest</div>
+                        <div class="tag">Supervised Learning</div>
+
+
+                    </div>
+                    <div class="post_description">
+                        A comprehensive analysis of employee retention strategies utilising R, data analytics, and LaTeX for documentation.
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/SIR.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="CDN_Exeter.html">SIR Model in MATLAB</a></h3>
+                        <p class="datestamp">Oct, 2023</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">MATLAB</div>
+                        <div class="tag">Epidemiology</div>
+                        <div class="tag">LaTeX</div>
+
+                    </div>
+                    <div class="post_description">
+                        Modelling infectious diseases using the SIR model in MATLAB, demonstrating the impact of various parameters.
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/Graphs.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="Graphs_cw.html">Ontology Report</a></h3>
+                        <p class="datestamp">Dec, 2023</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">Mathematica</div>
+                        <div class="tag">LaTeX</div>
+                    </div>
+                    <div class="post_description">
+                        A detailed report on ontological structures created using Mathematica and documented in LaTeX.
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/Exeter Dissertation.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="Exeter_Diss.html">Exeter University Dissertation</a></h3>
+                        <p class="datestamp">May, 2018</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">AI</div>
+                        <div class="tag">Education</div>
+                        <div class="tag">LaTeX</div>
+
+                    </div>
+                    <div class="post_description">
+                        An academic dissertation completed at Exeter University, investigating: "Improving feedback for student proofs with Lean and AI"
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/chaos.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="CDN_Exeter_2.html">Chaos in a Controlled Population Model</a></h3>
+                        <p class="datestamp">Dec, 2023</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">MATLAB</div>
+                        <div class="tag">Chaos Theory</div>
+                        <div class="tag">LaTeX</div>
+
+                    </div>
+                    <div class="post_description">
+                        Exploring chaotic dynamics in a predator-prey population model using bifurcation diagrams and Lyapunov exponents, using MATLAB.
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+            <article class="post"> 
+                <img src="../Images/Project Preview/No Image.png" alt="Project Thumbnail" class="post-image">
+                
+                <div class="post-content">
+                    <div class="post_title">
+                        <h3><a href="home.html">More Content Coming Soon!</a></h3>
+                        <p class="datestamp">TBC</p>
+                    </div>
+            
+                    <div class="tags">
+                        <div class="tag">TBC</div>
+                    </div>
+                    <div class="post_description">
+                        
+                    </div>
+                </div>
+            </article>
+            <div class="divider"></div>
+            
+
+
+
+
+
+
+
+        </div>
+    </div>
 
     <div id="footer-placeholder"></div>
-
-
 </body>
 </html>
