@@ -315,7 +315,7 @@ h3 a:hover {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
 
     .chess_logo{
         display: none;
