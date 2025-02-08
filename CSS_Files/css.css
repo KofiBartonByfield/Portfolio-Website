@@ -291,11 +291,13 @@ h3 a:hover {
     .post {
         flex-direction: column;
         text-align: center;
+        
     }
 
     .post-image {
         width: 50%;
         max-height: none;
+        min-height: 200px;
         margin-bottom: 10px;
     }
 }
