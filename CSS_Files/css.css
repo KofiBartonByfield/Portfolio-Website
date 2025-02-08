@@ -310,12 +310,21 @@ h3 a:hover {
         min-height: 200px;
         margin-bottom: 10px;
     }
-    .title-text {
 
-        font-size:1cm;
+
+}
+
+
+@media (max-width: 300px) {
+
+    .chess_logo{
+        display: none;
+    }
+    .title-text {
+        font-size:0.9cm;
     }
     .tools_title{
-        font-size: 250%;
+        font-size: 200%;
     }
-
+    
 }

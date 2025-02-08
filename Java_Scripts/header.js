@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             <a href="home.html" class="no-underline">
                 <h1 class="title-text">
-                    <span aria-label="Search">
+                    <span aria-label="Search" class='chess_logo'>
                         &#9816;
                     </span>
                     
