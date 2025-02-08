@@ -310,5 +310,12 @@ h3 a:hover {
         min-height: 200px;
         margin-bottom: 10px;
     }
-}
+    .title-text {
 
+        font-size:0.8cm;
+    }
+    .tools_title{
+        font-size: 170%;
+    }
+
+}
