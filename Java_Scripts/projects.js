@@ -1,6 +1,12 @@
 const imageData = [
     {
         src: '../Images/Project Preview/kmeans.png',
+        title: 'Negative Binomial Analysis of Terrorist Attack Lethality in Europe',
+        description: 'Analysis of factors influencing the lethality of terrorist attacks in Europe using data from the Global Terrorism Database and statistical modelling.',
+        link: 'european_terror.html'
+    },
+    {
+        src: '../Images/Project Preview/kmeans.png',
         title: 'K-Means Clustering on Airbnb Listings',
         description: 'This project applies K-Means clustering to Airbnb listings in Hawaii, uncovering patterns and segmenting properties based on features like price, location, and availability to gain insights into the rental market.',
         link: 'k_means.html'
