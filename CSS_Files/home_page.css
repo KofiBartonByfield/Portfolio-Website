@@ -94,9 +94,10 @@ footer {
 .pdf-container {
     border: 2px solid black;
     max-height: 1400px;
-    width: 100%;
+    width: 75%;
     height: 900px;
     display:inline;
+
 
 }
 
@@ -106,7 +107,8 @@ footer {
     box-sizing: border-box;
     height: 100%;
     display: flex;
-  
+    justify-content: center; /* Horizontally centres content inside */
+
 
 }
 
