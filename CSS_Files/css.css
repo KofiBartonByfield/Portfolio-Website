@@ -131,11 +131,14 @@ footer {
     font-size: 16px;
     color: #333;
     width: 300px;
-    /* max-width: 300px;
-    min-width: 300px; */
+    /* /* max-width: 300px; */
+    /* min-width: 400px;  */
+    /* white-space: nowrap; */
     text-align:left;
 }
-
+.about-me li {
+    white-space: nowrap;
+}
 
 
 
