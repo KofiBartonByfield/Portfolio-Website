@@ -154,7 +154,7 @@ footer {
     overflow-y: auto;
     /* scrollbar-width: none; */
     scrollbar-width:thin; /* Thin scrollbar */
-    scrollbar-color: rgba(0, 0, 0, 0.04) transparent; /* Thumb color and track color */
+    scrollbar-color: rgba(0, 0, 0, 0.181) transparent; /* Thumb color and track color */
 
 
     scroll-behavior: smooth; /* Smooth scroll */
